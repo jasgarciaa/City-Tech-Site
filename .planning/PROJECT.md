@@ -49,7 +49,7 @@ Capture service request leads — every page must make it effortless for a poten
 
 ## Constraints
 
-- **Tech stack**: Next.js (App Router, latest stable), Tailwind CSS, Supabase, React Hook Form + Zod, MDX blog, Vercel deployment — fixed per brief
+- **Tech stack**: Next.js (App Router, latest stable), Tailwind CSS v4, shadcn/ui (Radix UI primitives), Supabase, React Hook Form + Zod, MDX blog, Vercel deployment
 - **Logo placeholder**: Real logo file pending — build with SVG placeholder, swap on delivery
 - **Map center**: DMV region (Washington DC area); service zone covers DC, Maryland, Virginia
 - **Audience**: Broad age range — design accessibility and readability take priority over trendy UI patterns
@@ -59,6 +59,7 @@ Capture service request leads — every page must make it effortless for a poten
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
 | Resend for email notifications | Specified in brief; straightforward Supabase + Resend integration | — Pending |
+| shadcn/ui component library | Team familiar with it from prior project (Quantifai); accelerates accessible UI — buttons, forms, accordion, select | — Pending |
 | Leaflet vs Mapbox for service area map | Leaflet is free/open-source; Mapbox has better styling but requires API key | — Pending |
 | Blue/white as primary color system | Matches existing logo; professional, trust-building, age-accessible | — Pending |
 | Services as single data source | Enables rapid service expansion; ensures consistency across grid, nav, and detail pages | — Pending |
