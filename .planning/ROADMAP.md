@@ -46,8 +46,14 @@ Plans:
   3. The client logo carousel scrolls infinitely on both the homepage and the fleet page — logos are grayscale by default and transition to full color on hover, and the carousel pauses on hover
   4. The fleet services page presents a B2B pitch, use cases, and a fleet-specific contact form with company name and fleet size fields
   5. Every service detail page has a unique page title and meta description derived from the services data source — no two pages share identical metadata
-**Plans**: TBD
+**Plans**: 4 plans
 **UI hint**: yes
+
+Plans:
+- [ ] 02-01-PLAN.md — Install Phase 2 shadcn primitives, append carousel CSS keyframes, build reusable LogoCarousel component
+- [ ] 02-02-PLAN.md — Build homepage: all static sections (Hero, Trust Signals, Fleet Teaser, Service Area, Footer CTA) plus Services grid+accordion and Quick Contact Form
+- [ ] 02-03-PLAN.md — Build dynamic service detail pages (/services/[slug]) with generateStaticParams, unique metadata, and process/related components
+- [ ] 02-04-PLAN.md — Build /fleet page with hero, B2B pitch, use cases, and fleet-specific contact form
 
 ### Phase 3: Lead Capture + SEO
 **Goal**: Visitors can submit a service request that reaches the owner — and every page is discoverable, correctly structured for search engines, and indexable.
@@ -68,7 +74,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 0/3 | Planned | - |
-| 2. Core Pages | 0/? | Not started | - |
+| 2. Core Pages | 0/4 | Planned | - |
 | 3. Lead Capture + SEO | 0/? | Not started | - |
 
 ---
