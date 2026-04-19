@@ -12,7 +12,11 @@
       "Bash(command -v winpty)",
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --import-alias \"@/*\" --no-src-dir --turbopack --yes)",
       "Bash(npm install *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Skill(gsd:discuss-phase)",
+      "Skill(gsd:discuss-phase:*)"
     ]
   }
 }
