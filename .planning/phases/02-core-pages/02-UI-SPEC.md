@@ -1,7 +1,8 @@
 ---
 phase: 2
 slug: core-pages
-status: draft
+status: approved
+reviewed_at: 2026-04-19
 shadcn_initialized: true
 preset: manual-init
 created: 2026-04-19
@@ -98,7 +99,7 @@ All tokens confirmed live in `app/globals.css`. No new tokens are added in Phase
 
 **Accent (`#00AEEF`) reserved exclusively for Phase 2:**
 1. A single key phrase in the hero headline (e.g., "we come to you" or the service category phrase) — `text-accent` on that phrase only
-2. The "Request Service" primary CTA button background in the hero (paired: primary button = `--primary`, secondary "Call Now" outline = `--primary` border/text — see hero section below for the exact inversion from D-19)
+2. Hero section key phrase only — CTAs in the hero use `--primary` (primary button) and `--primary` border/text (outline button); accent is NOT used on any hero CTA button
 3. Category badge on service cards for **Locksmith** category only — Electronics cards use `--primary`, Locksmith cards use `--accent`
 4. Step number callouts in the service detail page "Process" section (circular numbered badges)
 5. Trust signal icon color (Lucide icons in the Trust Signals block)
