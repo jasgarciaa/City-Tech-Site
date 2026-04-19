@@ -1,7 +1,8 @@
 ---
 phase: 1
 slug: foundation
-status: draft
+status: approved
+reviewed_at: 2026-04-19
 shadcn_initialized: true
 preset: manual-init
 created: 2026-04-19
