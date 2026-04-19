@@ -125,11 +125,11 @@ Add `className={inter.variable}` to the `<html>` element. Reference as `font-[va
 | Role | Size | Weight | Line Height | Usage |
 |------|------|--------|-------------|-------|
 | Body | 16px | 400 (regular) | 1.6 | All paragraph text, dropdown descriptions, footer copy |
-| Label | 14px | 500 (medium) | 1.4 | Nav link labels, button labels, footer column headers, badge text |
+| Label | 14px | 400 (regular) | 1.4 | Nav link labels, button labels, footer column headers, badge text, nav group labels (uppercase + letter-spacing: 0.08em provides visual distinction) |
 | Heading | 20px | 600 (semibold) | 1.3 | Section headings, nav dropdown group labels ("Electronics", "Locksmith") |
-| Display | 28px | 700 (bold) | 1.2 | Page hero headline (Phase 2), not used in Phase 1 components |
+| Display | 28px | 600 (semibold) | 1.2 | Page hero headline (Phase 2), not used in Phase 1 components |
 
-**Weights used:** 400, 500, 600, 700 — Inter supports all four without extra loading cost. Load all four subsets via `next/font/google` weight array.
+**Weights used:** 400 (regular) and 600 (semibold) only — exactly 2 weights. Load both via `next/font/google` weight array: `weight: ['400', '600']`.
 
 **Minimum body font size: 16px on all viewports.** Never drop below 16px for readable content. 14px is permitted only for label-role text (nav links, button labels, captions).
 
@@ -183,7 +183,7 @@ All values are multiples of 4px (8-point grid base).
 **Navigation zone (center):**
 - Component: shadcn `NavigationMenu`
 - Links: **Services** (with dropdown) | **Fleet** | **Request Service**
-- Font: 14px, weight 500, `--foreground` color
+- Font: 14px, weight 400, `--foreground` color
 - Active page indicator: bottom border `2px solid var(--primary)` on the active link
 - Hover state: color transitions to `--primary` in 150ms
 
@@ -192,8 +192,8 @@ All values are multiples of 4px (8-point grid base).
 - Panel background: `--muted` (#F3F4F6)
 - Border: `1px solid var(--border)`, `border-radius: var(--radius)`
 - Two column groups: **Electronics** (left) and **Locksmith** (right)
-- Group label: 12px, weight 700, uppercase, `letter-spacing: 0.08em`, `--muted-foreground` color
-- Service items: 14px, weight 500, `--foreground` — on hover `--primary` with background `rgba(27, 58, 143, 0.06)`
+- Group label: 14px, weight 400, uppercase, `letter-spacing: 0.08em`, `--muted-foreground` color
+- Service items: 14px, weight 400, `--foreground` — on hover `--primary` with background `rgba(27, 58, 143, 0.06)`
 - Each item links to `/services/[slug]`
 - Populated dynamically from `/data/services.ts` — no hardcoded service names in this component
 
@@ -202,7 +202,7 @@ All values are multiples of 4px (8-point grid base).
 - Size: `sm` (shadcn size — produces ~36px height on desktop, meets 44px on mobile via explicit `min-h-[44px]`)
 - Label: `Call Now` — on same line or stacked with phone number
 - Phone number: displayed as `(555) 555-5555` placeholder — wrap in `<a href="tel:+15555555555">` for tap-to-call
-- Phone number text: 13px, weight 600, `--primary` color, displayed adjacent to or below button label
+- Phone number text: 14px, weight 600, `--primary` color, displayed adjacent to or below button label
 - Combined element must be at minimum 44px tall on mobile
 
 **Mobile header (< 768px):**
@@ -219,7 +219,7 @@ All values are multiples of 4px (8-point grid base).
 - Header: City Tech logo + close button (`X` icon, Lucide `X`, 24px)
 - Nav links stacked vertically: Services (expanded accordion, not dropdown), Fleet, Request Service
 - Services section in drawer: shows both group labels (Electronics / Locksmith) with service links below each
-- Each nav link: 16px, weight 500, `--foreground`, 44px min height, full-width, `border-bottom: 1px solid var(--border)`
+- Each nav link: 16px, weight 400, `--foreground`, 44px min height, full-width, `border-bottom: 1px solid var(--border)`
 - Active link: `--primary` color, `background: rgba(27, 58, 143, 0.06)`
 - Drawer closes on: link click, outside tap, `Escape` key, close button click
 
@@ -237,13 +237,13 @@ All values are multiples of 4px (8-point grid base).
 **Brand Column:**
 - Logo (same SVG as header, max-height 40px)
 - Tagline: `"Mobile Automotive Locksmith and Electronics Service"` — 14px, weight 400, `--muted-foreground`
-- Service area: `"Serving DC, Maryland & Virginia"` — 14px, weight 500, `--foreground`
+- Service area: `"Serving DC, Maryland & Virginia"` — 14px, weight 400, `--foreground`
 - Trust signal badges (stacked):
-  - `"Est. 2016"` — 13px, weight 700, `--accent` color (#00AEEF)
-  - `"NASTF Background-Checked Employees"` — 13px, weight 500, `--foreground`
+  - `"Est. 2016"` — 14px, weight 600, `--accent` color (#00AEEF)
+  - `"NASTF Background-Checked Employees"` — 14px, weight 400, `--foreground`
 
 **Services Column:**
-- Column header: `"Our Services"` — 12px, weight 700, uppercase, `letter-spacing: 0.08em`, `--muted-foreground`
+- Column header: `"Our Services"` — 14px, weight 400, uppercase, `letter-spacing: 0.08em`, `--muted-foreground`
 - All services from `/data/services.ts` listed as links
 - Link style: 14px, weight 400, `--foreground`
 - Hover: `--accent` underline (2px), color stays `--foreground`
@@ -252,7 +252,7 @@ All values are multiples of 4px (8-point grid base).
 
 **Contact Column:**
 - Column header: `"Contact"` — same style as Services header
-- Phone: `(555) 555-5555` — 15px, weight 600, `--primary` color, `<a href="tel:+15555555555">` tap-to-call
+- Phone: `(555) 555-5555` — 16px, weight 600, `--primary` color, `<a href="tel:+15555555555">` tap-to-call
 - Availability: `"Available when you need us"` — 14px, weight 400, `--muted-foreground`
 - Service area repeated: `"DC, Maryland & Virginia"` — 14px, weight 400, `--muted-foreground`
 
@@ -265,7 +265,7 @@ All values are multiples of 4px (8-point grid base).
   - Hover: `--primary` color, 150ms transition
   - `aria-label`: `"City Tech on Facebook"`, `"City Tech on Instagram"`, `"City Tech on Linktree"`
   - `href`: placeholder `#` until owner provides URLs (noted as deferred in CONTEXT.md)
-- Right side: Copyright — `"© 2026 City Tech, LLC. All rights reserved."` — 13px, weight 400, `--muted-foreground`
+- Right side: Copyright — `"© 2026 City Tech, LLC. All rights reserved."` — 14px, weight 400, `--muted-foreground`
 - Bottom strip layout: `flex items-center justify-between`
 
 **Mobile footer (< 768px):**
@@ -286,9 +286,9 @@ All values are multiples of 4px (8-point grid base).
 | `destructive` | `--destructive` | `--destructive-foreground` | none | Delete/destructive (not in Phase 1) |
 
 **Sizes:**
-- `sm`: height 36px, padding `8px 16px`, font 14px weight 500 — use for header CTA on desktop
-- `default`: height 40px, padding `10px 20px`, font 14px weight 500 — standard usage
-- `lg`: height 48px, padding `12px 24px`, font 15px weight 600 — hero CTAs (Phase 2)
+- `sm`: height 36px, padding `8px 16px`, font 14px weight 400 — use for header CTA on desktop
+- `default`: height 40px, padding `12px 20px`, font 14px weight 400 — standard usage
+- `lg`: height 48px, padding `12px 24px`, font 16px weight 600 — hero CTAs (Phase 2)
 
 **Mobile override:** All buttons must be `min-h-[44px]` on mobile regardless of size variant (LAYOUT-03).
 
