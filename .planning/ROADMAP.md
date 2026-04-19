@@ -28,8 +28,13 @@
   3. The global footer is present on every page with contact info, service links, and a footer CTA
   4. Adding a single object to `/data/services.ts` causes that service to appear automatically wherever services are listed — no other file needs editing
   5. The blue-and-white brand color system renders consistently across components and meets minimum 44px touch targets and 16px body font on mobile
-**Plans**: TBD
+**Plans**: 3 plans
 **UI hint**: yes
+
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold, Tailwind v4 brand tokens, root layout, directory structure, env files
+- [ ] 01-02-PLAN.md — Services data model, Supabase table + RLS, Resend server action stub
+- [ ] 01-03-PLAN.md — Sticky header (desktop nav + mobile Sheet drawer) and global footer
 
 ### Phase 2: Core Pages
 **Goal**: Visitors can explore all services and the fleet offering — every primary conversion page is live, content-complete, and linked correctly.
@@ -62,7 +67,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/? | Not started | - |
+| 1. Foundation | 0/3 | Planned | - |
 | 2. Core Pages | 0/? | Not started | - |
 | 3. Lead Capture + SEO | 0/? | Not started | - |
 

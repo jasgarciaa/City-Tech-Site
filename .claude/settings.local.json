@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(node -e ' *)",
+      "WebSearch",
+      "Bash(npm --version)",
+      "Read(//c/Program Files/nodejs/**)",
+      "Read(//c/Users/garci/AppData/Local/Programs/**)",
+      "Read(//c/Users/garci/scoop/apps/**)",
+      "Bash(command -v winpty)"
+    ]
+  }
+}
