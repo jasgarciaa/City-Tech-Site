@@ -135,14 +135,51 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01–06 | Phase 1 | Pending |
-| LAYOUT-01–05 | Phase 1 | Pending |
-| HOME-01–10 | Phase 2 | Pending |
-| SVC-01–04 | Phase 2 | Pending |
-| FLEET-01–04 | Phase 2 | Pending |
-| REQ-01–05 | Phase 3 | Pending |
-| BLOG-01–05 | Phase 3 | Pending |
-| SEO-01–06 | Phase 3 | Pending |
+| FOUND-01 | Phase 1 — Foundation | Pending |
+| FOUND-02 | Phase 1 — Foundation | Pending |
+| FOUND-03 | Phase 1 — Foundation | Pending |
+| FOUND-04 | Phase 1 — Foundation | Pending |
+| FOUND-05 | Phase 1 — Foundation | Pending |
+| FOUND-06 | Phase 1 — Foundation | Pending |
+| LAYOUT-01 | Phase 1 — Foundation | Pending |
+| LAYOUT-02 | Phase 1 — Foundation | Pending |
+| LAYOUT-03 | Phase 1 — Foundation | Pending |
+| LAYOUT-04 | Phase 1 — Foundation | Pending |
+| LAYOUT-05 | Phase 1 — Foundation | Pending |
+| HOME-01 | Phase 2 — Core Pages | Pending |
+| HOME-02 | Phase 2 — Core Pages | Pending |
+| HOME-03 | Phase 2 — Core Pages | Pending |
+| HOME-04 | Phase 2 — Core Pages | Pending |
+| HOME-05 | Phase 2 — Core Pages | Pending |
+| HOME-06 | Phase 2 — Core Pages | Pending |
+| HOME-07 | Phase 2 — Core Pages | Pending |
+| HOME-08 | Phase 2 — Core Pages | Pending |
+| HOME-09 | Phase 2 — Core Pages | Pending |
+| HOME-10 | Phase 2 — Core Pages | Pending |
+| SVC-01 | Phase 2 — Core Pages | Pending |
+| SVC-02 | Phase 2 — Core Pages | Pending |
+| SVC-03 | Phase 2 — Core Pages | Pending |
+| SVC-04 | Phase 2 — Core Pages | Pending |
+| FLEET-01 | Phase 2 — Core Pages | Pending |
+| FLEET-02 | Phase 2 — Core Pages | Pending |
+| FLEET-03 | Phase 2 — Core Pages | Pending |
+| FLEET-04 | Phase 2 — Core Pages | Pending |
+| REQ-01 | Phase 3 — Lead Capture + SEO | Pending |
+| REQ-02 | Phase 3 — Lead Capture + SEO | Pending |
+| REQ-03 | Phase 3 — Lead Capture + SEO | Pending |
+| REQ-04 | Phase 3 — Lead Capture + SEO | Pending |
+| REQ-05 | Phase 3 — Lead Capture + SEO | Pending |
+| BLOG-01 | Phase 3 — Lead Capture + SEO | Pending |
+| BLOG-02 | Phase 3 — Lead Capture + SEO | Pending |
+| BLOG-03 | Phase 3 — Lead Capture + SEO | Pending |
+| BLOG-04 | Phase 3 — Lead Capture + SEO | Pending |
+| BLOG-05 | Phase 3 — Lead Capture + SEO | Pending |
+| SEO-01 | Phase 3 — Lead Capture + SEO | Pending |
+| SEO-02 | Phase 3 — Lead Capture + SEO | Pending |
+| SEO-03 | Phase 3 — Lead Capture + SEO | Pending |
+| SEO-04 | Phase 3 — Lead Capture + SEO | Pending |
+| SEO-05 | Phase 3 — Lead Capture + SEO | Pending |
+| SEO-06 | Phase 3 — Lead Capture + SEO | Pending |
 
 **Coverage:**
 - v1 requirements: 41 total
@@ -151,4 +188,4 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 
 ---
 *Requirements defined: 2026-04-19*
-*Last updated: 2026-04-19 after initial definition*
+*Last updated: 2026-04-19 after roadmap creation — expanded traceability to individual requirements*
