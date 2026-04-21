@@ -3,12 +3,12 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-last_updated: "2026-04-21T15:52:19.318Z"
+last_updated: "2026-04-21T15:59:28.727Z"
 progress:
   total_phases: 3
   completed_phases: 1
   total_plans: 7
-  completed_plans: 4
+  completed_plans: 5
 ---
 
 # State: City Tech
@@ -29,7 +29,7 @@ progress:
 ## Current Position
 
 Phase: 02 (core-pages) — EXECUTING
-Plan: 2 of 4
+Plan: 3 of 4
 
 ## Performance Metrics
 
@@ -42,6 +42,7 @@ Plan: 2 of 4
 
 ---
 | Phase 02-core-pages P01 | 4 | 3 tasks | 12 files |
+| Phase 02-core-pages P03 | 18 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -59,6 +60,9 @@ Plan: 2 of 4
 - [Phase 02-core-pages]: Carousel animation translateX(-50%) not -100%: doubled track, -50% equals one full set width for seamless loop
 - [Phase 02-core-pages]: data-paused attribute toggle over useState for carousel pause: avoids React re-render on every hover event
 - [Phase 02-core-pages]: aria-hidden duplicate tile set in real flex container (not fragment): preserves gap-6 spacing at loop seam
+- [Phase 02-core-pages]: Next.js 15+/16 async params pattern: params typed as Promise<{ slug: string }>, awaited before destructuring
+- [Phase 02-core-pages]: dynamicParams = false enforces strict 404 for unknown slugs — SEO integrity
+- [Phase 02-core-pages]: Service data spine: services.map() in generateStaticParams auto-generates all pages with zero code change when new service added
 
 ### Critical Pitfalls (from research)
 

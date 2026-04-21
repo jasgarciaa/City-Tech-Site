@@ -51,10 +51,10 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 
 ### Service Detail Pages (/services/[service])
 
-- [ ] **SVC-01**: Individual SEO page per service, auto-generated from `/data/services.ts` via `generateStaticParams`
-- [ ] **SVC-02**: Page structure per service: problem → solution → process → CTA (no pricing — "contact for a free quote")
-- [ ] **SVC-03**: Related services cross-links at bottom of each service page
-- [ ] **SVC-04**: Service-specific SEO metadata (title, description, OG tags) derived from services data
+- [x] **SVC-01**: Individual SEO page per service, auto-generated from `/data/services.ts` via `generateStaticParams`
+- [x] **SVC-02**: Page structure per service: problem → solution → process → CTA (no pricing — "contact for a free quote")
+- [x] **SVC-03**: Related services cross-links at bottom of each service page
+- [x] **SVC-04**: Service-specific SEO metadata (title, description, OG tags) derived from services data
 
 ### Fleet Services Page (/fleet)
 
@@ -156,10 +156,10 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 | HOME-08 | Phase 2 — Core Pages | Pending |
 | HOME-09 | Phase 2 — Core Pages | Pending |
 | HOME-10 | Phase 2 — Core Pages | Pending |
-| SVC-01 | Phase 2 — Core Pages | Pending |
-| SVC-02 | Phase 2 — Core Pages | Pending |
-| SVC-03 | Phase 2 — Core Pages | Pending |
-| SVC-04 | Phase 2 — Core Pages | Pending |
+| SVC-01 | Phase 2 — Core Pages | Complete |
+| SVC-02 | Phase 2 — Core Pages | Complete |
+| SVC-03 | Phase 2 — Core Pages | Complete |
+| SVC-04 | Phase 2 — Core Pages | Complete |
 | FLEET-01 | Phase 2 — Core Pages | Pending |
 | FLEET-02 | Phase 2 — Core Pages | Pending |
 | FLEET-03 | Phase 2 — Core Pages | Pending |
