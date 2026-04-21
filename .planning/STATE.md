@@ -1,3 +1,16 @@
+---
+gsd_state_version: 1.0
+milestone: v1.0
+milestone_name: milestone
+status: unknown
+last_updated: "2026-04-21T15:52:19.318Z"
+progress:
+  total_phases: 3
+  completed_phases: 1
+  total_plans: 7
+  completed_plans: 4
+---
+
 # State: City Tech
 
 **Last updated:** 2026-04-19
@@ -9,29 +22,14 @@
 
 **Core Value:** Capture service request leads — every page must make it effortless for a potential customer to submit a request or pick up the phone.
 
-**Current Focus:** Phase 1 — Foundation (project init, services data model, global layout shell, design system)
+**Current Focus:** Phase 02 — core-pages
 
 ---
 
 ## Current Position
 
-| Field | Value |
-|-------|-------|
-| Phase | 1 — Foundation |
-| Plan | Not started |
-| Status | Ready to plan |
-| Last Completed | — (nothing yet) |
-
-**Progress:**
-```
-Phase 1: Foundation     [ ] Not started
-Phase 2: Core Pages     [ ] Not started
-Phase 3: Lead Capture   [ ] Not started
-
-Overall: 0/3 phases complete
-```
-
----
+Phase: 02 (core-pages) — EXECUTING
+Plan: 2 of 4
 
 ## Performance Metrics
 
@@ -43,6 +41,7 @@ Overall: 0/3 phases complete
 | Plans complete | 0 |
 
 ---
+| Phase 02-core-pages P01 | 4 | 3 tasks | 12 files |
 
 ## Accumulated Context
 
@@ -56,6 +55,10 @@ Overall: 0/3 phases complete
 | Server Actions for form submission (not API routes) | Official App Router pattern; co-located with form |
 | Hardcoded testimonials (not Google Reviews API) | Simpler for v1; link to Google profile for live reviews |
 | Services as single source of truth (/data/services.ts) | One object addition auto-generates page, nav entry, grid card, sitemap entry |
+
+- [Phase 02-core-pages]: Carousel animation translateX(-50%) not -100%: doubled track, -50% equals one full set width for seamless loop
+- [Phase 02-core-pages]: data-paused attribute toggle over useState for carousel pause: avoids React re-render on every hover event
+- [Phase 02-core-pages]: aria-hidden duplicate tile set in real flex container (not fragment): preserves gap-6 spacing at loop seam
 
 ### Critical Pitfalls (from research)
 

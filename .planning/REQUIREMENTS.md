@@ -32,8 +32,8 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 
 - [ ] **LAYOUT-01**: Sticky header with City Tech logo (placeholder SVG until real logo provided), navigation links, and prominent tap-to-call button
 - [ ] **LAYOUT-02**: Global footer with contact info, service links, and footer CTA
-- [ ] **LAYOUT-03**: Responsive, mobile-first layout — minimum 44px touch targets, 16px minimum body font, single-column forms on mobile
-- [ ] **LAYOUT-04**: Blue and white brand color system — clean, professional, accessible; no hyper-modern patterns that alienate older demographics
+- [x] **LAYOUT-03**: Responsive, mobile-first layout — minimum 44px touch targets, 16px minimum body font, single-column forms on mobile
+- [x] **LAYOUT-04**: Blue and white brand color system — clean, professional, accessible; no hyper-modern patterns that alienate older demographics
 - [ ] **LAYOUT-05**: Availability messaging framed as "Available when you need us" (not "24/7" — conveys responsiveness without hard hours commitment)
 
 ### Homepage (/)
@@ -42,7 +42,7 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 - [ ] **HOME-02**: Quick contact form (name, phone, service requested) — shorter version that submits to Supabase; full form lives at /request-service
 - [ ] **HOME-03**: Services grid showing all services from `/data/services.ts`
 - [ ] **HOME-04**: Services expandable accordion section — each service has a short description that expands on click
-- [ ] **HOME-05**: Client logo carousel — infinite horizontal scroll, grayscale by default, full color on hover, pauses on hover; logos from `/public/logos/` (placeholder SVGs until real assets delivered)
+- [x] **HOME-05**: Client logo carousel — infinite horizontal scroll, grayscale by default, full color on hover, pauses on hover; logos from `/public/logos/` (placeholder SVGs until real assets delivered)
 - [ ] **HOME-06**: Trust signals block: years in business, licensed & insured, NASTF background-checked employees
 - [ ] **HOME-07**: Fleet services teaser block with CTA linking to /fleet
 - [ ] **HOME-08**: Testimonials section with 3–5 hardcoded client quotes
@@ -61,7 +61,7 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 - [ ] **FLEET-01**: B2B pitch section targeting dealerships, rental companies, delivery fleets, and commercial vehicle operators
 - [ ] **FLEET-02**: Use cases section explaining fleet-scale service offerings
 - [ ] **FLEET-03**: Fleet-specific service request form with additional fields: company name, fleet size, primary services needed
-- [ ] **FLEET-04**: Client logo carousel (same reusable component as homepage) showing existing fleet clients
+- [x] **FLEET-04**: Client logo carousel (same reusable component as homepage) showing existing fleet clients
 
 ### Service Request Page (/request-service)
 
@@ -143,14 +143,14 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 | FOUND-06 | Phase 1 — Foundation | Pending |
 | LAYOUT-01 | Phase 1 — Foundation | Pending |
 | LAYOUT-02 | Phase 1 — Foundation | Pending |
-| LAYOUT-03 | Phase 1 — Foundation | Pending |
-| LAYOUT-04 | Phase 1 — Foundation | Pending |
+| LAYOUT-03 | Phase 1 — Foundation | Complete |
+| LAYOUT-04 | Phase 1 — Foundation | Complete |
 | LAYOUT-05 | Phase 1 — Foundation | Pending |
 | HOME-01 | Phase 2 — Core Pages | Pending |
 | HOME-02 | Phase 2 — Core Pages | Pending |
 | HOME-03 | Phase 2 — Core Pages | Pending |
 | HOME-04 | Phase 2 — Core Pages | Pending |
-| HOME-05 | Phase 2 — Core Pages | Pending |
+| HOME-05 | Phase 2 — Core Pages | Complete |
 | HOME-06 | Phase 2 — Core Pages | Pending |
 | HOME-07 | Phase 2 — Core Pages | Pending |
 | HOME-08 | Phase 2 — Core Pages | Pending |
@@ -163,7 +163,7 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 | FLEET-01 | Phase 2 — Core Pages | Pending |
 | FLEET-02 | Phase 2 — Core Pages | Pending |
 | FLEET-03 | Phase 2 — Core Pages | Pending |
-| FLEET-04 | Phase 2 — Core Pages | Pending |
+| FLEET-04 | Phase 2 — Core Pages | Complete |
 | REQ-01 | Phase 3 — Lead Capture + SEO | Pending |
 | REQ-02 | Phase 3 — Lead Capture + SEO | Pending |
 | REQ-03 | Phase 3 — Lead Capture + SEO | Pending |
