@@ -3,6 +3,10 @@
 
 /* Light mode only — D-02: no dark mode */
 
+html {
+  font-size: 17px;
+}
+
 :root {
   /* Brand blues — sampled from City Tech logo (approximate; update if exact values differ > 5 delta) */
   --background: #FFFFFF;
