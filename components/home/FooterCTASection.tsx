@@ -7,7 +7,7 @@ export default function FooterCTASection() {
       <div className="mx-auto max-w-3xl">
         <h2 className="text-xl font-semibold text-primary-foreground">Ready to Get Started?</h2>
         <p className="mt-3 text-base leading-relaxed text-white/85">
-          Contact City Tech today — we come to you.
+          Contact City Tech today. We come to you.
         </p>
         <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button
@@ -23,7 +23,7 @@ export default function FooterCTASection() {
             variant="outline"
             className="min-h-[44px] border-white bg-transparent text-white hover:bg-white/10"
           >
-            <a href="tel:+15555555555" aria-label="Call City Tech at (555) 555-5555">
+            <a href="tel:+17033436234" aria-label="Call City Tech at (703) 343-6234">
               Call Now
             </a>
           </Button>

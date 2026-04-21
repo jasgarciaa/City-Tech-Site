@@ -170,7 +170,7 @@ export default function QuickContactForm({ services }: QuickContactFormProps) {
 
             {state === 'error' && (
               <p role="alert" className="text-sm text-destructive text-center">
-                Something went wrong. Please call us directly at (555) 555-5555.
+                Something went wrong. Please call us directly at (703) 343-6234.
               </p>
             )}
           </form>

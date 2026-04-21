@@ -64,12 +64,19 @@ export default function Footer() {
               Contact
             </p>
             <a
-              href="tel:+15555555555"
+              href="tel:+17033436234"
               className="text-base font-semibold text-primary transition-colors hover:text-accent"
             >
-              (555) 555-5555
+              (703) 343-6234
             </a>
-            {/* Availability — LAYOUT-05: "Available when you need us", NOT "24/7" */}
+            <p className="mt-1 text-sm text-muted-foreground">
+              <a
+                href="mailto:Citytech12v@gmail.com"
+                className="transition-colors hover:text-primary"
+              >
+                Citytech12v@gmail.com
+              </a>
+            </p>
             <p className="mt-2 text-sm text-muted-foreground">Available when you need us</p>
             <p className="mt-1 text-sm text-muted-foreground">DC, Maryland &amp; Virginia</p>
           </div>

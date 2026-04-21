@@ -5,8 +5,7 @@ import { createClient } from '@/lib/supabase/server'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-// TODO: Replace with owner's actual email before Phase 3 go-live
-const OWNER_NOTIFICATION_EMAIL = 'owner@citytech.com'
+const OWNER_NOTIFICATION_EMAIL = 'Citytech12v@gmail.com'
 
 export interface ServiceRequestPayload {
   name: string

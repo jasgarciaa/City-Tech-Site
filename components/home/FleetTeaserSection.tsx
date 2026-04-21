@@ -14,8 +14,8 @@ export default function FleetTeaserSection() {
             City Tech Serves Fleets Too
           </h2>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-            From dealerships to rental companies — we handle multi-vehicle electronics and locksmith
-            needs on-site.
+            Dealerships, rental companies, delivery fleets. We handle multi-vehicle electronics and
+            locksmith needs on-site.
           </p>
           <Button
             asChild

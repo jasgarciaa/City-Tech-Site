@@ -12,8 +12,8 @@ export default function HeroSection() {
           Mobile Automotive Services
         </p>
         <h1 className="mt-4 text-3xl md:text-4xl font-semibold leading-[1.2] text-primary-foreground">
-          Expert Auto Electronics &amp; Locksmith &mdash;{' '}
-          <span className="text-accent">we come to you</span>
+          Expert Auto Electronics &amp; Locksmith.{' '}
+          <span className="text-accent">We come to you.</span>
         </h1>
         <p className="mt-4 text-base leading-relaxed text-white/85 max-w-3xl mx-auto">
           City Tech provides mobile car audio, electronics installation, and locksmith services
@@ -34,7 +34,7 @@ export default function HeroSection() {
             variant="outline"
             className="min-h-[44px] border-white bg-transparent text-white hover:bg-white/10"
           >
-            <a href="tel:+15555555555" aria-label="Call City Tech at (555) 555-5555">
+            <a href="tel:+17033436234" aria-label="Call City Tech at (703) 343-6234">
               Call Now
             </a>
           </Button>

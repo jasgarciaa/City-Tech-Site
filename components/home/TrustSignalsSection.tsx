@@ -12,14 +12,14 @@ export default function TrustSignalsSection() {
             <Calendar aria-hidden="true" size={32} className="text-accent" />
             <h3 className="mt-3 text-xl font-semibold text-foreground">Est. 2016</h3>
             <p className="mt-2 text-base leading-relaxed text-foreground max-w-xs">
-              Over a decade serving the DMV region
+              Serving the DMV region since 2016
             </p>
           </div>
           <div className="text-center flex flex-col items-center">
             <ShieldCheck aria-hidden="true" size={32} className="text-accent" />
             <h3 className="mt-3 text-xl font-semibold text-foreground">Licensed &amp; Insured</h3>
             <p className="mt-2 text-base leading-relaxed text-foreground max-w-xs">
-              Fully licensed in DC, Maryland, and Virginia
+              Licensed in DC, Maryland, and Virginia
             </p>
           </div>
           <div className="text-center flex flex-col items-center">

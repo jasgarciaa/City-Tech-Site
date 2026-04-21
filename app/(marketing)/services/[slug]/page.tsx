@@ -88,7 +88,7 @@ export default async function ServiceDetailPage(
             <Link href="/request-service">Request Service</Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="min-h-[44px] border-primary text-primary hover:bg-primary/5">
-            <a href="tel:+15555555555" aria-label="Call City Tech at (555) 555-5555">Call Now</a>
+            <a href="tel:+17033436234" aria-label="Call City Tech at (703) 343-6234">Call Now</a>
           </Button>
         </div>
       </section>
