@@ -53,7 +53,7 @@ Plans:
 - [x] 02-01-PLAN.md — Install Phase 2 shadcn primitives, append carousel CSS keyframes, build reusable LogoCarousel component
 - [x] 02-02-PLAN.md — Build homepage: all static sections (Hero, Trust Signals, Fleet Teaser, Service Area, Footer CTA) plus Services grid+accordion and Quick Contact Form
 - [x] 02-03-PLAN.md — Build dynamic service detail pages (/services/[slug]) with generateStaticParams, unique metadata, and process/related components
-- [ ] 02-04-PLAN.md — Build /fleet page with hero, B2B pitch, use cases, and fleet-specific contact form
+- [x] 02-04-PLAN.md — Build /fleet page with hero, B2B pitch, use cases, and fleet-specific contact form
 
 ### Phase 3: Lead Capture + SEO
 **Goal**: Visitors can submit a service request that reaches the owner — and every page is discoverable, correctly structured for search engines, and indexable.
@@ -74,7 +74,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 0/3 | Planned | - |
-| 2. Core Pages | 3/4 | In Progress |  |
+| 2. Core Pages | 4/4 | Complete |  |
 | 3. Lead Capture + SEO | 0/? | Not started | - |
 
 ---
