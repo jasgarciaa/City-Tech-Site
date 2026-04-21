@@ -3,7 +3,7 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-last_updated: "2026-04-21T15:59:28.727Z"
+last_updated: "2026-04-21T16:30:00.000Z"
 progress:
   total_phases: 3
   completed_phases: 1
@@ -13,8 +13,8 @@ progress:
 
 # State: City Tech
 
-**Last updated:** 2026-04-19
-**Session:** Roadmap created
+**Last updated:** 2026-04-21
+**Session:** Completed 02-02-PLAN.md — Homepage assembly
 
 ---
 
@@ -63,6 +63,9 @@ Plan: 3 of 4
 - [Phase 02-core-pages]: Next.js 15+/16 async params pattern: params typed as Promise<{ slug: string }>, awaited before destructuring
 - [Phase 02-core-pages]: dynamicParams = false enforces strict 404 for unknown slugs — SEO integrity
 - [Phase 02-core-pages]: Service data spine: services.map() in generateStaticParams auto-generates all pages with zero code change when new service added
+- [Phase 02-core-pages P02]: Inline style for hero gradient — one-off gradient cleaner than Tailwind v4 arbitrary syntax
+- [Phase 02-core-pages P02]: group class on AccordionTrigger + group-data-[state=open] for Show details/Show less toggle — avoids per-card React state
+- [Phase 02-core-pages P02]: services_requested: [service] array-wrap in QuickContactForm — matches server action signature
 
 ### Critical Pitfalls (from research)
 
