@@ -20,7 +20,8 @@
       "Bash(node -e \"const {services} = require\\('./data/services.ts'\\); console.log\\(services.length\\)\")",
       "Bash(grep -c \"  {$\" \"data/services.ts\")",
       "Bash(git worktree *)",
-      "Bash(git branch *)"
+      "Bash(git branch *)",
+      "Bash(git push *)"
     ]
   }
 }
