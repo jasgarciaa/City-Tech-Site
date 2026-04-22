@@ -12,7 +12,7 @@ export default function Header() {
         {/* Logo zone — left */}
         <Link href="/" aria-label="City Tech — home">
           <Image
-            src="/logo.svg"
+            src="/logos/City%20Tech%20mobile%20lettered%20logo.png"
             alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
             height={52}
             width={200}
