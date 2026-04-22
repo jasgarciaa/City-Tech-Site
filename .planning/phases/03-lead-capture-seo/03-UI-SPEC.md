@@ -1,7 +1,8 @@
 ---
 phase: 3
 slug: lead-capture-seo
-status: draft
+status: approved
+reviewed_at: 2026-04-22
 shadcn_initialized: true
 preset: new-york / neutral / css-variables
 created: 2026-04-21
