@@ -69,8 +69,8 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 03-01-PLAN.md — Build /request-service page + ServiceRequestForm (RHF+Zod) + extend submitServiceRequest with server-side Zod and vin field; document BLOG deferral
-- [ ] 03-02-PLAN.md — SEO infrastructure: sitemap.ts, robots.ts, LocalBusiness JSON-LD in root layout, openGraph tags on homepage + fleet, sizes attribute on logo
+- [x] 03-01-PLAN.md — Build /request-service page + ServiceRequestForm (RHF+Zod) + extend submitServiceRequest with server-side Zod and vin field; document BLOG deferral
+- [x] 03-02-PLAN.md — SEO infrastructure: sitemap.ts, robots.ts, LocalBusiness JSON-LD in root layout, openGraph tags on homepage + fleet, sizes attribute on logo
 - [ ] 03-03-PLAN.md — End-to-end verification: automated build + curl smoke checks, human-verified form submission → Supabase + Resend, visual UX + SEO audit
 
 ---

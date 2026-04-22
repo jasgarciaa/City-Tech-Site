@@ -65,19 +65,19 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 
 ### Service Request Page (/request-service)
 
-- [ ] **REQ-01**: Full service request form with fields: name, phone, email, vehicle year/make/model, services requested (multi-select from services list), preferred service location (address), preferred date/time window, description/additional details, how they heard about us (optional)
-- [ ] **REQ-02**: Form validated client-side with React Hook Form + Zod, re-validated server-side in server action
-- [ ] **REQ-03**: On submit: row inserted into Supabase `service_requests`, Resend notification sent to owner with all request details
-- [ ] **REQ-04**: Success state: "Thanks — we'll reach out shortly to confirm and quote your service"
-- [ ] **REQ-05**: Supabase RLS policy allows anonymous INSERT on `service_requests` table
+- [x] **REQ-01**: Full service request form with fields: name, phone, email, vehicle year/make/model, services requested (multi-select from services list), preferred service location (address), preferred date/time window, description/additional details, how they heard about us (optional)
+- [x] **REQ-02**: Form validated client-side with React Hook Form + Zod, re-validated server-side in server action
+- [x] **REQ-03**: On submit: row inserted into Supabase `service_requests`, Resend notification sent to owner with all request details
+- [x] **REQ-04**: Success state: "Thanks — we'll reach out shortly to confirm and quote your service"
+- [x] **REQ-05**: Supabase RLS policy allows anonymous INSERT on `service_requests` table
 
 ### Blog (/blog)
 
-- [ ] **BLOG-01**: MDX blog scaffold — blog index page at /blog, individual post pages at /blog/[slug]
-- [ ] **BLOG-02**: Posts use `@next/mdx` with gray-matter for frontmatter (title, description, date, category, slug)
-- [ ] **BLOG-03**: Category structure: Locksmith, Electronics, Fleet, Tips & Guides
-- [ ] **BLOG-04**: SEO metadata on each post (title, description, OG tags, canonical URL)
-- [ ] **BLOG-05**: `generateStaticParams` from content directory — 404 on unknown slugs (`dynamicParams = false`)
+- [x] **BLOG-01**: MDX blog scaffold — blog index page at /blog, individual post pages at /blog/[slug]
+- [x] **BLOG-02**: Posts use `@next/mdx` with gray-matter for frontmatter (title, description, date, category, slug)
+- [x] **BLOG-03**: Category structure: Locksmith, Electronics, Fleet, Tips & Guides
+- [x] **BLOG-04**: SEO metadata on each post (title, description, OG tags, canonical URL)
+- [x] **BLOG-05**: `generateStaticParams` from content directory — 404 on unknown slugs (`dynamicParams = false`)
 
 ### SEO & Performance
 
@@ -85,7 +85,7 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 - [ ] **SEO-02**: LocalBusiness JSON-LD schema in root layout (business name, address, DMV service area, phone, description)
 - [ ] **SEO-03**: Auto-generated `sitemap.ts` (all pages finalized, including service detail pages and blog posts)
 - [ ] **SEO-04**: `robots.ts` — allow all, reference sitemap
-- [ ] **SEO-05**: Semantic HTML throughout — correct heading hierarchy, landmark elements, alt text on all images
+- [x] **SEO-05**: Semantic HTML throughout — correct heading hierarchy, landmark elements, alt text on all images
 - [ ] **SEO-06**: `next/image` for all images with `priority` on hero, `sizes` attribute, and WebP optimization
 
 ---
@@ -164,21 +164,21 @@ Service emphasis: electronics/car audio is the primary business; locksmith is se
 | FLEET-02 | Phase 2 — Core Pages | Pending |
 | FLEET-03 | Phase 2 — Core Pages | Pending |
 | FLEET-04 | Phase 2 — Core Pages | Complete |
-| REQ-01 | Phase 3 — Lead Capture + SEO | Pending |
-| REQ-02 | Phase 3 — Lead Capture + SEO | Pending |
-| REQ-03 | Phase 3 — Lead Capture + SEO | Pending |
-| REQ-04 | Phase 3 — Lead Capture + SEO | Pending |
-| REQ-05 | Phase 3 — Lead Capture + SEO | Pending |
-| BLOG-01 | Phase 3 — Lead Capture + SEO | Pending |
-| BLOG-02 | Phase 3 — Lead Capture + SEO | Pending |
-| BLOG-03 | Phase 3 — Lead Capture + SEO | Pending |
-| BLOG-04 | Phase 3 — Lead Capture + SEO | Pending |
-| BLOG-05 | Phase 3 — Lead Capture + SEO | Pending |
+| REQ-01 | Phase 3 — Lead Capture + SEO | Complete |
+| REQ-02 | Phase 3 — Lead Capture + SEO | Complete |
+| REQ-03 | Phase 3 — Lead Capture + SEO | Complete |
+| REQ-04 | Phase 3 — Lead Capture + SEO | Complete |
+| REQ-05 | Phase 3 — Lead Capture + SEO | Complete |
+| BLOG-01 | Phase 3 — Lead Capture + SEO | Complete |
+| BLOG-02 | Phase 3 — Lead Capture + SEO | Complete |
+| BLOG-03 | Phase 3 — Lead Capture + SEO | Complete |
+| BLOG-04 | Phase 3 — Lead Capture + SEO | Complete |
+| BLOG-05 | Phase 3 — Lead Capture + SEO | Complete |
 | SEO-01 | Phase 3 — Lead Capture + SEO | Pending |
 | SEO-02 | Phase 3 — Lead Capture + SEO | Pending |
 | SEO-03 | Phase 3 — Lead Capture + SEO | Pending |
 | SEO-04 | Phase 3 — Lead Capture + SEO | Pending |
-| SEO-05 | Phase 3 — Lead Capture + SEO | Pending |
+| SEO-05 | Phase 3 — Lead Capture + SEO | Complete |
 | SEO-06 | Phase 3 — Lead Capture + SEO | Pending |
 
 **Coverage:**
