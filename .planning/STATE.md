@@ -2,19 +2,19 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: unknown
-last_updated: "2026-04-21T16:16:10.113Z"
+status: in_progress
+last_updated: "2026-04-22T00:00:00.000Z"
 progress:
   total_phases: 3
   completed_phases: 2
-  total_plans: 7
-  completed_plans: 7
+  total_plans: 10
+  completed_plans: 9
 ---
 
 # State: City Tech
 
-**Last updated:** 2026-04-21
-**Session:** Completed 02-04-PLAN.md — Fleet page
+**Last updated:** 2026-04-22
+**Session:** Completed 03-02-PLAN.md — SEO infrastructure (sitemap, robots, JSON-LD, OG metadata)
 
 ---
 
@@ -22,14 +22,14 @@ progress:
 
 **Core Value:** Capture service request leads — every page must make it effortless for a potential customer to submit a request or pick up the phone.
 
-**Current Focus:** Phase 02 — core-pages
+**Current Focus:** Phase 03 — lead-capture-seo
 
 ---
 
 ## Current Position
 
 Phase: 3
-Plan: Not started
+Plan: 2 of 3 complete
 
 ## Performance Metrics
 
@@ -69,6 +69,10 @@ Plan: Not started
 - [Phase 02-core-pages P02]: services_requested: [service] array-wrap in QuickContactForm — matches server action signature
 - [Phase 02-core-pages P04]: Fleet form uses services_requested: [] (empty array) with FLEET REQUEST description prefix — distinguishes fleet vs individual requests in DB
 - [Phase 02-core-pages P04]: Explicit React.ChangeEvent types on Input/Textarea handlers required in strict TypeScript — inline arrow functions need explicit types when component prop types aren't narrowed by inference
+- [Phase 03-lead-capture-seo P02]: AdministrativeArea (not State) for areaServed in LocalBusiness schema — more accurate for DC which is not a US state
+- [Phase 03-lead-capture-seo P02]: dangerouslySetInnerHTML + JSON.stringify for JSON-LD (not next/script) — must render synchronously in initial HTML for crawlers; next/script defers loading
+- [Phase 03-lead-capture-seo P02]: No address field in LocalBusiness schema — owner privacy requirement; areaServed covers service territory
+- [Phase 03-lead-capture-seo P02]: NEXT_PUBLIC_SITE_URL fallback to citytechllc.com — placeholder until owner confirms production domain; must be set on Vercel before go-live
 
 ### Critical Pitfalls (from research)
 
