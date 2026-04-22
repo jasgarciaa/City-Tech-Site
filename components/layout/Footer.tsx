@@ -24,6 +24,7 @@ export default function Footer() {
               alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
               height={52}
               width={200}
+              sizes="200px"
               className="h-11 w-auto"
             />
             <p className="mt-3 text-sm text-muted-foreground">
