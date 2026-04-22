@@ -56,14 +56,18 @@ Exceptions:
 
 Base font size: 17px (set on `html` in globals.css — established Phase 1, do not change).
 
+**Declared weights: 2 — regular (400) and semibold (600). No medium weight.**
+
 | Role | Size | Weight | Line Height | Usage |
 |------|------|--------|-------------|-------|
 | Body | 16px (approx. 0.94rem at 17px base) | 400 regular | 1.5 | Form field input text, helper text, checkbox labels, paragraph copy |
-| Label | 14px (`text-sm`) | 500 medium | 1.4 | Form field labels (`<Label>`, `<FormLabel>`), category group headings in checkbox grid |
+| Label | 14px (`text-sm`) | 400 regular | 1.4 | Form field labels (`<Label>`, `<FormLabel>`), category group headings in checkbox grid |
 | Heading | 20px (`text-xl`) | 600 semibold | 1.3 | Section headings within the page (`h2`), form section titles |
 | Display | 28px (`text-2xl`) | 600 semibold | 1.2 | Page `h1` on /request-service: "Request Service" |
 
-Note: shadcn `text-sm` = 0.875rem = ~14.9px at 17px base. This rounds to 15px effective. Treat all label-role text as "small/compact" — use `text-sm font-medium`.
+shadcn `<FormLabel>` renders `font-medium` (500) by default. Override with `className="font-semibold"` wherever a label needs emphasis matching the heading weight, or use `className="font-normal"` to keep label text at 400. The default shadcn `font-medium` is not part of the declared weight scale and must not appear as a standalone declared weight.
+
+Note: shadcn `text-sm` = 0.875rem = ~14.9px at 17px base. This rounds to 15px effective. Treat all label-role text as "small/compact" — use `text-sm font-normal` for plain labels, `text-sm font-semibold` for emphasized group headings.
 
 ---
 
@@ -127,7 +131,7 @@ Render order, top to bottom:
 ### Multi-Select Services (Checkbox Group)
 
 - Two groups rendered side-by-side on sm+ screens, stacked on mobile: "Electronics" and "Locksmith"
-- Group headings: `text-sm font-medium text-muted-foreground mb-2`
+- Group headings: `text-sm font-semibold text-muted-foreground mb-2`
 - Grid: `grid grid-cols-1 sm:grid-cols-2 gap-2` within each group
 - Checkbox: `<input type="checkbox" className="h-4 w-4 accent-primary" />`
 - Label click zone: `<label className="flex items-center gap-2 cursor-pointer">`
@@ -146,7 +150,7 @@ Wrapped in `<Accordion type="single" collapsible>` using installed `components/u
 | How did you hear about us? | `<Input>` via `<FormField>` | `text` | `z.string().optional()` |
 
 Accordion trigger label: "Add more details (optional)"
-Accordion trigger style: `text-sm font-medium text-primary`
+Accordion trigger style: `text-sm font-semibold text-primary`
 Accordion container style: `mt-6 border rounded-md px-4` with `border-border`
 
 ### Submit Button
@@ -334,4 +338,5 @@ Per D-26 (locked decision):
 
 *Phase: 03-lead-capture-seo*
 *UI-SPEC created: 2026-04-21*
+*UI-SPEC revised: 2026-04-21 — typography weights collapsed from 3 to 2 (dropped 500 medium; labels move to 400 regular)*
 *Design system source: components.json (shadcn new-york) + app/globals.css (Tailwind v4 @theme)*
