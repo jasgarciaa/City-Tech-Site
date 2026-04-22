@@ -22,9 +22,9 @@ export default function Footer() {
             <Image
               src="/logo.svg"
               alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
-              height={40}
-              width={120}
-              className="h-10 w-auto"
+              height={52}
+              width={200}
+              className="h-11 w-auto"
             />
             <p className="mt-3 text-sm text-muted-foreground">
               Mobile Automotive Locksmith and Electronics Service

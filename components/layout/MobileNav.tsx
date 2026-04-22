@@ -46,9 +46,9 @@ export default function MobileNav() {
             <Image
               src="/logo.svg"
               alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
-              height={32}
-              width={100}
-              className="h-8 w-auto"
+              height={52}
+              width={200}
+              className="h-9 w-auto"
             />
             {/* Visually hidden title for screen reader context */}
             <SheetTitle className="sr-only">Navigation Menu</SheetTitle>

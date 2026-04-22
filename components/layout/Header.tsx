@@ -14,10 +14,10 @@ export default function Header() {
           <Image
             src="/logo.svg"
             alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
-            height={40}
-            width={120}
+            height={52}
+            width={200}
             priority
-            className="h-10 w-auto"
+            className="h-11 w-auto"
           />
         </Link>
 
