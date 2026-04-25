@@ -44,7 +44,7 @@ export default function MobileNav() {
         <SheetContent side="left" className="w-[280px] p-0">
           <SheetHeader className="border-b border-border p-4">
             <Image
-              src="/logos/City%20Tech%20mobile%20lettered%20logo.png"
+              src="/logos/New-citytech-logo.jpeg"
               alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
               height={52}
               width={200}

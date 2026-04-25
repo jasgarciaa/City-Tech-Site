@@ -8,7 +8,6 @@ const BASE_CLIENTS: Client[] = [
   { name: 'AVIS', logoSrc: '/logos/avis-budget-group-logo-png_seeklogo-317428.webp' },
   { name: 'Zipcar', logoSrc: '/logos/zipcar-logo-png_seeklogo-333354.webp' },
   { name: 'Michael and Sons', logoSrc: '/logos/New-michael-and-sons.webp' },
-  { name: 'City Tech', logoSrc: '/logos/New-citytech-logo.jpeg' },
 ]
 
 // Repeat 4× so one set is always wider than the widest viewport
