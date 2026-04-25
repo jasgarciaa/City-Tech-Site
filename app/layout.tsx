@@ -11,8 +11,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | City Tech',
-    default: 'City Tech — Mobile Automotive Locksmith and Electronics Service',
+    template: '%s | Citytech',
+    default: 'Citytech — Mobile Automotive Locksmith and Electronics Service',
   },
   description: 'Mobile automotive locksmith and electronics services for the DC, Maryland, and Virginia region.',
 }

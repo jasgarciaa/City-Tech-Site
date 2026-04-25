@@ -10,10 +10,10 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
 
         {/* Logo zone — left */}
-        <Link href="/" aria-label="City Tech — home">
+        <Link href="/" aria-label="Citytech — home">
           <Image
             src="/logo.svg"
-            alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
+            alt="Citytech — Mobile Automotive Locksmith and Electronics Service"
             height={40}
             width={120}
             priority
@@ -29,7 +29,7 @@ export default function Header() {
           {/* Phone number — visible on desktop, hidden on mobile (MobileNav handles mobile) */}
           <a
             href="tel:+15555555555"
-            aria-label="Call City Tech at (555) 555-5555"
+            aria-label="Call Citytech at (555) 555-5555"
             className="hidden text-sm font-semibold text-primary md:block transition-colors hover:text-accent"
           >
             (555) 555-5555
@@ -41,7 +41,7 @@ export default function Header() {
             size="sm"
             className="hidden min-h-[44px] bg-primary text-primary-foreground hover:brightness-110 active:brightness-95 focus-visible:outline-accent md:flex"
           >
-            <a href="tel:+15555555555" aria-label="Call City Tech at (555) 555-5555">
+            <a href="tel:+15555555555" aria-label="Call Citytech at (555) 555-5555">
               Call Now
             </a>
           </Button>

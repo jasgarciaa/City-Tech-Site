@@ -45,7 +45,7 @@ export async function submitServiceRequest(payload: ServiceRequestPayload) {
   // Owner notification email — using onboarding@resend.dev for dev (no DNS config needed)
   // Before go-live: replace from address with owner's verified domain
   await resend.emails.send({
-    from: 'City Tech <onboarding@resend.dev>',
+    from: 'Citytech <onboarding@resend.dev>',
     to: OWNER_NOTIFICATION_EMAIL,
     subject: `New Service Request from ${payload.name}`,
     html: `

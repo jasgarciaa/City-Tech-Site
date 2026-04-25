@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <Image
               src="/logo.svg"
-              alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
+              alt="Citytech — Mobile Automotive Locksmith and Electronics Service"
               height={40}
               width={120}
               className="h-10 w-auto"
@@ -35,7 +35,16 @@ export default function Footer() {
             {/* Trust signals (D-15) */}
             <div className="mt-4 space-y-1">
               <p className="text-sm font-semibold text-accent">Est. 2016</p>
-              <p className="text-sm text-foreground">NASTF Background-Checked Employees</p>
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/logos/NASTF-Logo.webp"
+                  alt="NASTF — National Automotive Service Task Force"
+                  height={24}
+                  width={60}
+                  className="h-6 w-auto"
+                />
+                <p className="text-sm text-foreground">Background-Checked Employees</p>
+              </div>
             </div>
           </div>
 
@@ -45,7 +54,7 @@ export default function Footer() {
               Our Services
             </p>
             <ul className="space-y-1.5">
-              {[...electronics, ...locksmith].map(s => (
+              {[...locksmith, ...electronics].map(s => (
                 <li key={s.slug}>
                   <Link
                     href={`/services/${s.slug}`}
@@ -83,7 +92,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <a
               href="#"
-              aria-label="City Tech on Facebook"
+              aria-label="Citytech on Facebook"
               className="text-muted-foreground transition-colors duration-150 hover:text-primary focus-visible:rounded focus-visible:outline-2 focus-visible:outline-ring"
             >
               {/* Facebook icon */}
@@ -93,7 +102,7 @@ export default function Footer() {
             </a>
             <a
               href="#"
-              aria-label="City Tech on Instagram"
+              aria-label="Citytech on Instagram"
               className="text-muted-foreground transition-colors duration-150 hover:text-primary focus-visible:rounded focus-visible:outline-2 focus-visible:outline-ring"
             >
               {/* Instagram icon */}
@@ -106,7 +115,7 @@ export default function Footer() {
             {/* Linktree — text fallback (D-17, deferred) */}
             <a
               href="#"
-              aria-label="City Tech on Linktree"
+              aria-label="Citytech on Linktree"
               className="flex h-5 w-5 items-center justify-center text-sm font-semibold text-muted-foreground transition-colors duration-150 hover:text-primary focus-visible:rounded focus-visible:outline-2 focus-visible:outline-ring"
             >
               LT

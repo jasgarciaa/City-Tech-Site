@@ -226,20 +226,24 @@ One section, two visual layers sharing the same card set.
 
 **Component:** `LogoCarousel` — `"use client"` (requires JS for animation and hover-pause)
 
-**Three placeholder tiles (D-24):** Michael and Sons | Zipcar | AVIS
+**Three clients (D-24):** Michael and Sons | Zipcar | Avis Budget Group
+
+Real logo files are available at:
+- `/public/logos/michael-and-son-logo@2x_b12650.webp`
+- `/public/logos/zipcar-logo-png_seeklogo-333354.webp`
+- `/public/logos/avis-budget-group-logo-png_seeklogo-317428.webp`
 
 **Tile design:**
 - Background: `--muted` (#F3F4F6)
 - Border: `1px solid var(--border)`
 - Border-radius: `var(--radius-md)` (6px)
-- Min-width: 160px, height: 80px
-- Company name: 14px, weight 600, `--muted-foreground` (grey placeholder state)
+- Min-width: 160px, height: 80px, padding: 12px
+- Use `next/image` — `className="h-full w-auto object-contain"`
 - Filter: `grayscale(100%)` default, `grayscale(0%)` on hover — CSS `filter` transition 200ms
 
-**When real logo files replace tiles:**
-- Use `next/image` with `width` and `height` props
-- Same `grayscale`/`filter` CSS treatment applies to the `<img>` element
-- No code changes required — tiles become images, same class structure
+**"And more" footer line:**
+- Render below the carousel track (inside the `<section>`, after the track div)
+- Copy: `"And more..."` — 14px, weight 400, `--muted-foreground`, `text-center`, `mt-4`
 
 **Carousel behavior:**
 - Infinite horizontal scroll via CSS `@keyframes` animation — no JavaScript animation library
