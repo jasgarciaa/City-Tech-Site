@@ -22,11 +22,11 @@ export default function MobileNav() {
     <div className="flex items-center gap-2 md:hidden">
       {/* Phone number — always visible in mobile header (D-06) */}
       <a
-        href="tel:+15555555555"
-        aria-label="Call Citytech"
+        href="tel:+17033436234"
+        aria-label="Call City Tech"
         className="text-sm font-semibold text-primary transition-colors hover:text-accent"
       >
-        (555) 555-5555
+        (703) 343-6234
       </a>
 
       {/* Hamburger button — min 44px touch target (LAYOUT-03) */}
@@ -44,11 +44,11 @@ export default function MobileNav() {
         <SheetContent side="left" className="w-[280px] p-0">
           <SheetHeader className="border-b border-border p-4">
             <Image
-              src="/logo.svg"
-              alt="Citytech — Mobile Automotive Locksmith and Electronics Service"
-              height={32}
-              width={100}
-              className="h-8 w-auto self-start"
+              src="/logos/City%20Tech%20mobile%20lettered%20logo.png"
+              alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
+              height={52}
+              width={200}
+              className="h-9 w-auto"
             />
             {/* Visually hidden title for screen reader context */}
             <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
@@ -108,11 +108,11 @@ export default function MobileNav() {
 
             {/* Call Now in drawer */}
             <a
-              href="tel:+15555555555"
-              aria-label="Call Citytech at (555) 555-5555"
+              href="tel:+17033436234"
+              aria-label="Call City Tech at (703) 343-6234"
               className="flex min-h-[44px] items-center bg-primary px-4 text-base font-semibold text-primary-foreground transition-colors hover:brightness-110"
             >
-              Call Now — (555) 555-5555
+              Call Now: (703) 343-6234
             </a>
 
           </nav>

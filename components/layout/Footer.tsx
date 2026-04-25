@@ -20,11 +20,12 @@ export default function Footer() {
           {/* Brand column (D-13) */}
           <div>
             <Image
-              src="/logo.svg"
-              alt="Citytech — Mobile Automotive Locksmith and Electronics Service"
-              height={40}
-              width={120}
-              className="h-10 w-auto"
+              src="/logos/City%20Tech%20mobile%20lettered%20logo.png"
+              alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
+              height={52}
+              width={200}
+              sizes="200px"
+              className="h-11 w-auto"
             />
             <p className="mt-3 text-sm text-muted-foreground">
               Mobile Automotive Locksmith and Electronics Service
@@ -73,12 +74,19 @@ export default function Footer() {
               Contact
             </p>
             <a
-              href="tel:+15555555555"
+              href="tel:+17033436234"
               className="text-base font-semibold text-primary transition-colors hover:text-accent"
             >
-              (555) 555-5555
+              (703) 343-6234
             </a>
-            {/* Availability — LAYOUT-05: "Available when you need us", NOT "24/7" */}
+            <p className="mt-1 text-sm text-muted-foreground">
+              <a
+                href="mailto:Citytech12v@gmail.com"
+                className="transition-colors hover:text-primary"
+              >
+                Citytech12v@gmail.com
+              </a>
+            </p>
             <p className="mt-2 text-sm text-muted-foreground">Available when you need us</p>
             <p className="mt-1 text-sm text-muted-foreground">DC, Maryland &amp; Virginia</p>
           </div>

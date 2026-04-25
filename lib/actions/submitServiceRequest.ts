@@ -1,12 +1,27 @@
 'use server'
 
+import { z } from 'zod'
 import { Resend } from 'resend'
 import { createClient } from '@/lib/supabase/server'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-// TODO: Replace with owner's actual email before Phase 3 go-live
-const OWNER_NOTIFICATION_EMAIL = 'owner@citytech.com'
+const OWNER_NOTIFICATION_EMAIL = 'Citytech12v@gmail.com'
+
+const serverSchema = z.object({
+  name: z.string().min(1),
+  phone: z.string().min(1),
+  email: z.string().email().optional().or(z.literal('')),
+  vehicle_year: z.string().optional(),
+  vehicle_make: z.string().optional(),
+  vehicle_model: z.string().optional(),
+  services_requested: z.array(z.string()).min(1),
+  service_location: z.string().optional(),
+  preferred_datetime: z.string().optional(),
+  description: z.string().optional(),
+  referral_source: z.string().optional(),
+  vin: z.string().optional(),
+})
 
 export interface ServiceRequestPayload {
   name: string
@@ -20,16 +35,24 @@ export interface ServiceRequestPayload {
   preferred_datetime?: string
   description?: string
   referral_source?: string
+  vin?: string              // optional VIN field from the full form
 }
 
 export async function submitServiceRequest(payload: ServiceRequestPayload) {
+  const parsed = serverSchema.safeParse(payload)
+  if (!parsed.success) {
+    throw new Error('Invalid service request payload')
+  }
+
   const supabase = await createClient()
 
+  // Strip vin from DB payload — service_requests table has no vin column
   // Use .select('id') to detect silent RLS failure (missing anon INSERT policy returns
   // { data: null, error: null } — checking only `error` would miss the failure)
+  const { vin: _vin, ...dbPayload } = payload
   const { data, error } = await supabase
     .from('service_requests')
-    .insert(payload)
+    .insert(dbPayload)
     .select('id')
 
   if (error) {
@@ -54,6 +77,7 @@ export async function submitServiceRequest(payload: ServiceRequestPayload) {
       <p><strong>Phone:</strong> ${payload.phone}</p>
       <p><strong>Email:</strong> ${payload.email ?? 'Not provided'}</p>
       <p><strong>Vehicle:</strong> ${payload.vehicle_year ?? ''} ${payload.vehicle_make ?? ''} ${payload.vehicle_model ?? ''}</p>
+      <p><strong>VIN:</strong> ${payload.vin ?? 'Not provided'}</p>
       <p><strong>Services requested:</strong> ${payload.services_requested.join(', ')}</p>
       <p><strong>Service location:</strong> ${payload.service_location ?? 'Not provided'}</p>
       <p><strong>Preferred time:</strong> ${payload.preferred_datetime ?? 'Flexible'}</p>

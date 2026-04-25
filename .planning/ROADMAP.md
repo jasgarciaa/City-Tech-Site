@@ -12,7 +12,7 @@
 
 - [ ] **Phase 1: Foundation** — Project init, services data model, global layout shell, and design system. Everything downstream depends on this.
 - [ ] **Phase 2: Core Pages** — Homepage (all sections), individual service detail pages, and the fleet services page. The primary content and conversion surfaces.
-- [ ] **Phase 3: Lead Capture + SEO** — Full service request form (Supabase + Resend), blog scaffold (MDX), and all SEO infrastructure (metadata, LocalBusiness schema, sitemap, robots.txt).
+- [ ] **Phase 3: Lead Capture + SEO** — Full service request form (Supabase + Resend), SEO infrastructure (metadata, LocalBusiness schema, sitemap, robots.txt). Blog scope (BLOG-01–05) explicitly deferred per D-26 — no blog code shipped in v1.
 
 ---
 
@@ -50,22 +50,28 @@ Plans:
 **UI hint**: yes
 
 Plans:
-- [ ] 02-01-PLAN.md — Install Phase 2 shadcn primitives, append carousel CSS keyframes, build reusable LogoCarousel component
-- [ ] 02-02-PLAN.md — Build homepage: all static sections (Hero, Trust Signals, Fleet Teaser, Service Area, Footer CTA) plus Services grid+accordion and Quick Contact Form
-- [ ] 02-03-PLAN.md — Build dynamic service detail pages (/services/[slug]) with generateStaticParams, unique metadata, and process/related components
-- [ ] 02-04-PLAN.md — Build /fleet page with hero, B2B pitch, use cases, and fleet-specific contact form
+- [x] 02-01-PLAN.md — Install Phase 2 shadcn primitives, append carousel CSS keyframes, build reusable LogoCarousel component
+- [x] 02-02-PLAN.md — Build homepage: all static sections (Hero, Trust Signals, Fleet Teaser, Service Area, Footer CTA) plus Services grid+accordion and Quick Contact Form
+- [x] 02-03-PLAN.md — Build dynamic service detail pages (/services/[slug]) with generateStaticParams, unique metadata, and process/related components
+- [x] 02-04-PLAN.md — Build /fleet page with hero, B2B pitch, use cases, and fleet-specific contact form
 
 ### Phase 3: Lead Capture + SEO
-**Goal**: Visitors can submit a service request that reaches the owner — and every page is discoverable, correctly structured for search engines, and indexable.
+**Goal**: Visitors can submit a service request that reaches the owner — and every page is discoverable, correctly structured for search engines, and indexable. Blog scope (BLOG-01–05) is explicitly deferred per D-26 and will not be built in this phase.
 **Depends on**: Phase 2
 **Requirements**: REQ-01, REQ-02, REQ-03, REQ-04, REQ-05, BLOG-01, BLOG-02, BLOG-03, BLOG-04, BLOG-05, SEO-01, SEO-02, SEO-03, SEO-04, SEO-05, SEO-06
 **Success Criteria** (what must be TRUE):
   1. A visitor submits the full service request form, a row appears in the Supabase `service_requests` table with status "pending", and the owner receives an email notification via Resend with all submitted details
   2. The form shows inline validation errors before submission and a confirmation message ("Thanks — we'll reach out shortly to confirm and quote your service") after a successful submit — no silent failures
-  3. The blog index at `/blog` lists posts by category; each individual post at `/blog/[slug]` renders correctly from MDX with a unique title, description, and OG tag; an unknown slug returns a 404
-  4. A Google Rich Results Test run against the homepage returns a valid LocalBusiness schema with business name, DMV service area, and phone number
-  5. `sitemap.xml` includes all service detail pages and all blog posts; `robots.txt` is present and references the sitemap URL
-**Plans**: TBD
+  3. A Google Rich Results Test run against the homepage returns a valid LocalBusiness schema with business name, DMV service area, and phone number
+  4. `sitemap.xml` includes all service detail pages (12) plus homepage, /fleet, and /request-service (15 URLs total); `robots.txt` is present and references the sitemap URL
+  5. BLOG-01–05 are explicitly acknowledged as deferred per D-26 — no /blog route, no MDX scaffold, no blog index exists in the codebase
+**Plans**: 3 plans
+**UI hint**: yes
+
+Plans:
+- [x] 03-01-PLAN.md — Build /request-service page + ServiceRequestForm (RHF+Zod) + extend submitServiceRequest with server-side Zod and vin field; document BLOG deferral
+- [x] 03-02-PLAN.md — SEO infrastructure: sitemap.ts, robots.ts, LocalBusiness JSON-LD in root layout, openGraph tags on homepage + fleet, sizes attribute on logo
+- [ ] 03-03-PLAN.md — End-to-end verification: automated build + curl smoke checks, human-verified form submission → Supabase + Resend, visual UX + SEO audit
 
 ---
 
@@ -74,8 +80,8 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 0/3 | Planned | - |
-| 2. Core Pages | 0/4 | Planned | - |
-| 3. Lead Capture + SEO | 0/? | Not started | - |
+| 2. Core Pages | 4/4 | Complete |  |
+| 3. Lead Capture + SEO | 0/3 | Planned | - |
 
 ---
 
@@ -89,11 +95,26 @@ Plans:
 | Service Detail Pages | SVC-01, SVC-02, SVC-03, SVC-04 | 2 |
 | Fleet Services Page | FLEET-01, FLEET-02, FLEET-03, FLEET-04 | 2 |
 | Service Request Page | REQ-01, REQ-02, REQ-03, REQ-04, REQ-05 | 3 |
-| Blog | BLOG-01, BLOG-02, BLOG-03, BLOG-04, BLOG-05 | 3 |
+| Blog (deferred per D-26) | BLOG-01, BLOG-02, BLOG-03, BLOG-04, BLOG-05 | 3 (deferred — no code) |
 | SEO & Performance | SEO-01, SEO-02, SEO-03, SEO-04, SEO-05, SEO-06 | 3 |
 
 **Total v1 mapped: 41/41 ✓**
 
 ---
+
+## Backlog (pre-launch — needs owner input)
+
+These tasks are ready to build the moment the owner supplies the URLs. No code architecture change needed — both are `href` swaps in `components/layout/Footer.tsx`.
+
+| # | Task | Blocked on | Where in code |
+|---|------|------------|---------------|
+| BL-01 | Wire Facebook link to the owner's Facebook page | Owner supplies Facebook URL | `Footer.tsx` — Facebook `<a href="#">` |
+| BL-02 | Wire Instagram link to the owner's Instagram profile | Owner supplies Instagram URL | `Footer.tsx` — Instagram `<a href="#">` |
+| BL-03 | Wire Linktree link (replace "LT" text fallback with real icon + URL) | Owner supplies Linktree URL | `Footer.tsx` — Linktree `<a href="#">` |
+
+Once all three URLs are provided, these can ship as a single commit with no planning overhead.
+
+---
 *Roadmap created: 2026-04-19*
+*Roadmap updated: 2026-04-22 — Backlog section added: BL-01/02/03 social media links (Facebook, Instagram, Linktree) pending owner-supplied URLs*
 *Stack: Next.js App Router, Tailwind v4, shadcn/ui, Supabase, React Hook Form + Zod, Resend, MDX, Vercel*

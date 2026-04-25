@@ -3,6 +3,10 @@
 
 /* Light mode only — D-02: no dark mode */
 
+html {
+  font-size: 17px;
+}
+
 :root {
   /* Brand blues — sampled from City Tech logo (approximate; update if exact values differ > 5 delta) */
   --background: #FFFFFF;
@@ -59,4 +63,30 @@
 
   /* Font */
   --font-sans: var(--font-inter);
+}
+
+/* =========================================================================
+   Logo Carousel (HOME-05, FLEET-04)
+   - Infinite horizontal scroll via transform translateX(0) → -50%
+   - Track contains two identical tile sets; -50% aligns set 2 start to viewport origin
+   - Pause on hover via data-paused attribute on the track
+   - Fallback: prefers-reduced-motion disables animation entirely
+   ========================================================================= */
+@keyframes carousel-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.carousel-track {
+  animation: carousel-scroll 30s linear infinite;
+}
+
+.carousel-track[data-paused="true"] {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track {
+    animation: none;
+  }
 }

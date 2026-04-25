@@ -1,18 +1,39 @@
 import type { Metadata } from 'next'
+import { services } from '@/data/services'
+import HeroSection from '@/components/home/HeroSection'
+import ServicesSection from '@/components/home/ServicesSection'
+import TrustSignalsSection from '@/components/home/TrustSignalsSection'
+import FleetTeaserSection from '@/components/home/FleetTeaserSection'
+import LogoCarousel from '@/components/shared/LogoCarousel'
+import ServiceAreaSection from '@/components/home/ServiceAreaSection'
+import QuickContactForm from '@/components/home/QuickContactForm'
+import FooterCTASection from '@/components/home/FooterCTASection'
 
 export const metadata: Metadata = {
   title: 'Home',
+  description:
+    'Mobile automotive electronics and locksmith services throughout the DC, Maryland, and Virginia region. Available when you need us.',
+  openGraph: {
+    title: 'City Tech — Mobile Automotive Locksmith and Electronics Service',
+    description:
+      'Mobile automotive electronics and locksmith services throughout the DC, Maryland, and Virginia region. Available when you need us.',
+    url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechllc.com',
+    siteName: 'City Tech',
+    type: 'website',
+  },
 }
 
 export default function HomePage() {
   return (
-    <div className="mx-auto max-w-7xl px-6 py-24 text-center">
-      <h1 className="text-2xl font-semibold text-foreground">
-        Citytech — Coming Soon
-      </h1>
-      <p className="mt-4 text-muted-foreground">
-        Mobile Automotive Locksmith and Electronics Service
-      </p>
-    </div>
+    <>
+      <HeroSection />
+      <ServicesSection services={services} />
+      <TrustSignalsSection />
+      <FleetTeaserSection />
+      <LogoCarousel ariaLabel="Our clients" />
+      <ServiceAreaSection />
+      <QuickContactForm services={services} />
+      <FooterCTASection />
+    </>
   )
 }

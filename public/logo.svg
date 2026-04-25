@@ -1,4 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40">
-  <rect width="120" height="40" fill="#1B3A8F" rx="4"/>
-  <text x="10" y="26" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Citytech</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 52" width="200" height="52">
+  <!-- Van body -->
+  <g stroke="#1B3A8F" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main van body outline -->
+    <path d="M8 32 L8 16 Q8 10 14 10 L88 10 Q100 10 108 18 L120 32 Z" />
+    <!-- Cab roof step -->
+    <path d="M88 10 L88 32" />
+    <!-- Van side window -->
+    <rect x="14" y="13" width="30" height="13" rx="2" />
+    <!-- Cab window -->
+    <path d="M90 13 L90 28 L108 28 L100 13 Z" />
+    <!-- Front bumper -->
+    <line x1="120" y1="32" x2="124" y2="32" />
+    <!-- Undercarriage line -->
+    <line x1="8" y1="32" x2="124" y2="32" />
+    <!-- Rear wheel well -->
+    <path d="M24 32 Q24 38 32 38 Q40 38 40 32" />
+    <!-- Front wheel well -->
+    <path d="M96 32 Q96 38 104 38 Q112 38 112 32" />
+  </g>
+  <!-- Rear wheel -->
+  <circle cx="32" cy="37" r="5.5" stroke="#1B3A8F" stroke-width="2.2" fill="none" />
+  <circle cx="32" cy="37" r="2" fill="#1B3A8F" />
+  <!-- Front wheel -->
+  <circle cx="104" cy="37" r="5.5" stroke="#1B3A8F" stroke-width="2.2" fill="none" />
+  <circle cx="104" cy="37" r="2" fill="#1B3A8F" />
+  <!-- Target/C circle on van -->
+  <circle cx="70" cy="21" r="9" stroke="#00AEEF" stroke-width="2" fill="none" />
+  <circle cx="70" cy="21" r="5" stroke="#1B3A8F" stroke-width="1.5" fill="none" />
+  <circle cx="70" cy="21" r="1.5" fill="#1B3A8F" />
+  <!-- Key shaft -->
+  <line x1="48" y1="44" x2="80" y2="44" stroke="#00AEEF" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Key bow (ring) -->
+  <circle cx="44" cy="44" r="4" stroke="#1B3A8F" stroke-width="2" fill="none" />
+  <!-- Key teeth -->
+  <polyline points="62,44 62,47 67,47 67,44 72,44 72,47" stroke="#00AEEF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- "City Tech" wordmark -->
+  <text x="134" y="24" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1B3A8F" letter-spacing="-0.3">City Tech</text>
+  <text x="134" y="38" font-family="Arial, sans-serif" font-size="8" font-weight="400" fill="#1B3A8F" letter-spacing="0.2">Mobile Automotive Services</text>
+  <text x="134" y="49" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#00AEEF" letter-spacing="0.3">Est. 2016</text>
 </svg>

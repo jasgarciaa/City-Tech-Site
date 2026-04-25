@@ -16,7 +16,12 @@
       "Bash(npm run *)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
       "Skill(gsd:discuss-phase)",
-      "Skill(gsd:discuss-phase:*)"
+      "Skill(gsd:discuss-phase:*)",
+      "Bash(node -e \"const {services} = require\\('./data/services.ts'\\); console.log\\(services.length\\)\")",
+      "Bash(grep -c \"  {$\" \"data/services.ts\")",
+      "Bash(git worktree *)",
+      "Bash(git branch *)",
+      "Bash(git push *)"
     ]
   }
 }
