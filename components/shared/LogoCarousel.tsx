@@ -20,12 +20,12 @@ const SET: Client[] = [
 
 function ClientTile({ name, logoSrc }: Client) {
   return (
-    <div className="flex min-w-[220px] h-24 shrink-0 items-center justify-center rounded-md border border-border bg-white px-6 shadow-sm grayscale transition-[filter,box-shadow] duration-200 hover:grayscale-0 hover:shadow-md">
+    <div className="flex min-w-[260px] h-28 shrink-0 items-center justify-center rounded-md border border-border bg-white px-8 shadow-sm transition-shadow duration-200 hover:shadow-md">
       {logoSrc ? (
         <img
           src={logoSrc}
           alt={name}
-          className="max-h-10 max-w-[160px] object-contain"
+          className="max-h-16 max-w-[200px] object-contain"
         />
       ) : (
         <span className="text-base font-semibold tracking-tight text-foreground">
@@ -62,6 +62,7 @@ export default function LogoCarousel({ ariaLabel = 'Our clients' }: { ariaLabel?
           ))}
         </div>
       </div>
+      <p className="mt-6 text-center text-sm text-muted-foreground">And more</p>
     </section>
   )
 }
