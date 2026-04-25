@@ -13,6 +13,75 @@ export interface ServiceDefinition {
 }
 
 export const services: ServiceDefinition[] = [
+  // --- Locksmith (order 1–4) ---
+  {
+    slug: 'vehicle-lockouts',
+    name: 'Vehicle Lockouts',
+    shortDescription: 'Mobile lockout service. We come to you when you\'re locked out of your car.',
+    category: 'locksmith',
+    featured: true,
+    order: 1,
+    pageContent: {
+      problem: 'Being locked out of your vehicle is stressful, especially in an unfamiliar area or bad weather.',
+      solution: 'City Tech dispatches a technician directly to your location. No tow required, no dealership wait.',
+      process: [
+        'Call us and provide your location, vehicle make, and model',
+        'We dispatch a technician to your location',
+        'We gain entry safely without damaging your vehicle and get you back on the road',
+      ],
+    },
+  },
+  {
+    slug: 'transponder-key-programming',
+    name: 'Transponder Key Programming',
+    shortDescription: 'Mobile programming of transponder keys and push-to-start fobs for most vehicles.',
+    category: 'locksmith',
+    featured: true,
+    order: 2,
+    pageContent: {
+      problem: 'Modern vehicle keys contain embedded transponder chips. A blank-cut key from a hardware store won\'t start your car.',
+      solution: 'City Tech programs transponder keys on-site using the right programming equipment. Faster and less expensive than a dealership.',
+      process: [
+        'We verify your vehicle\'s key type and confirm we have compatible programming hardware',
+        'We cut and program the new key to your vehicle\'s immobilizer system',
+        'We test the key in the ignition and confirm all functions before completing the job',
+      ],
+    },
+  },
+  {
+    slug: 'key-fob-replacement',
+    name: 'Key Fob Replacement',
+    shortDescription: 'Replace and program lost or damaged key fobs. We come to your location.',
+    category: 'locksmith',
+    featured: false,
+    order: 3,
+    pageContent: {
+      problem: 'Lost or damaged key fobs are expensive to replace at a dealership, and the process requires leaving your car there.',
+      solution: 'City Tech programs replacement fobs on-site. Remote lock/unlock, panic, and trunk functions all restored without a tow.',
+      process: [
+        'We source a compatible replacement fob for your vehicle\'s year, make, and model',
+        'We come to your location and program the fob to your vehicle\'s security system',
+        'We test all remote functions and confirm everything works before we leave',
+      ],
+    },
+  },
+  {
+    slug: 'ignition-repair-replacement',
+    name: 'Ignition Repair & Replacement',
+    shortDescription: 'Mobile ignition cylinder repair or replacement. No tow needed.',
+    category: 'locksmith',
+    featured: false,
+    order: 4,
+    pageContent: {
+      problem: 'A worn or damaged ignition cylinder can prevent your key from turning or leave it stuck. There is no easy self-fix.',
+      solution: 'City Tech diagnoses and repairs or replaces ignition cylinders at your location, saving you a costly dealership tow and labor charge.',
+      process: [
+        'We assess the ignition cylinder to determine repair vs. replacement',
+        'We remove the damaged cylinder and install a new or rebuilt replacement',
+        'We rekey to your existing key (when possible) and confirm the ignition operates correctly',
+      ],
+    },
+  },
   // --- Electronics (order 1–8) ---
   {
     slug: 'car-audio-installation',
@@ -147,75 +216,6 @@ export const services: ServiceDefinition[] = [
         'We confirm the correct Compustar kit for your vehicle and feature requirements',
         'We install all modules, harnesses, and antennas to Compustar specifications',
         'We activate DroneMobile (if applicable), test all functions, and register your warranty',
-      ],
-    },
-  },
-  // --- Locksmith (order 1–4) ---
-  {
-    slug: 'vehicle-lockouts',
-    name: 'Vehicle Lockouts',
-    shortDescription: 'Mobile lockout service. We come to you when you\'re locked out of your car.',
-    category: 'locksmith',
-    featured: true,
-    order: 1,
-    pageContent: {
-      problem: 'Being locked out of your vehicle is stressful, especially in an unfamiliar area or bad weather.',
-      solution: 'City Tech dispatches a technician directly to your location. No tow required, no dealership wait.',
-      process: [
-        'Call us and provide your location, vehicle make, and model',
-        'We dispatch a technician to your location',
-        'We gain entry safely without damaging your vehicle and get you back on the road',
-      ],
-    },
-  },
-  {
-    slug: 'transponder-key-programming',
-    name: 'Transponder Key Programming',
-    shortDescription: 'Mobile programming of transponder keys and push-to-start fobs for most vehicles.',
-    category: 'locksmith',
-    featured: true,
-    order: 2,
-    pageContent: {
-      problem: 'Modern vehicle keys contain embedded transponder chips. A blank-cut key from a hardware store won\'t start your car.',
-      solution: 'City Tech programs transponder keys on-site using the right programming equipment. Faster and less expensive than a dealership.',
-      process: [
-        'We verify your vehicle\'s key type and confirm we have compatible programming hardware',
-        'We cut and program the new key to your vehicle\'s immobilizer system',
-        'We test the key in the ignition and confirm all functions before completing the job',
-      ],
-    },
-  },
-  {
-    slug: 'key-fob-replacement',
-    name: 'Key Fob Replacement',
-    shortDescription: 'Replace and program lost or damaged key fobs. We come to your location.',
-    category: 'locksmith',
-    featured: false,
-    order: 3,
-    pageContent: {
-      problem: 'Lost or damaged key fobs are expensive to replace at a dealership, and the process requires leaving your car there.',
-      solution: 'City Tech programs replacement fobs on-site. Remote lock/unlock, panic, and trunk functions all restored without a tow.',
-      process: [
-        'We source a compatible replacement fob for your vehicle\'s year, make, and model',
-        'We come to your location and program the fob to your vehicle\'s security system',
-        'We test all remote functions and confirm everything works before we leave',
-      ],
-    },
-  },
-  {
-    slug: 'ignition-repair-replacement',
-    name: 'Ignition Repair & Replacement',
-    shortDescription: 'Mobile ignition cylinder repair or replacement. No tow needed.',
-    category: 'locksmith',
-    featured: false,
-    order: 4,
-    pageContent: {
-      problem: 'A worn or damaged ignition cylinder can prevent your key from turning or leave it stuck. There is no easy self-fix.',
-      solution: 'City Tech diagnoses and repairs or replaces ignition cylinders at your location, saving you a costly dealership tow and labor charge.',
-      process: [
-        'We assess the ignition cylinder to determine repair vs. replacement',
-        'We remove the damaged cylinder and install a new or rebuilt replacement',
-        'We rekey to your existing key (when possible) and confirm the ignition operates correctly',
       ],
     },
   },

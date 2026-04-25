@@ -101,6 +101,20 @@ Plans:
 **Total v1 mapped: 41/41 ✓**
 
 ---
+
+## Backlog (pre-launch — needs owner input)
+
+These tasks are ready to build the moment the owner supplies the URLs. No code architecture change needed — both are `href` swaps in `components/layout/Footer.tsx`.
+
+| # | Task | Blocked on | Where in code |
+|---|------|------------|---------------|
+| BL-01 | Wire Facebook link to the owner's Facebook page | Owner supplies Facebook URL | `Footer.tsx` — Facebook `<a href="#">` |
+| BL-02 | Wire Instagram link to the owner's Instagram profile | Owner supplies Instagram URL | `Footer.tsx` — Instagram `<a href="#">` |
+| BL-03 | Wire Linktree link (replace "LT" text fallback with real icon + URL) | Owner supplies Linktree URL | `Footer.tsx` — Linktree `<a href="#">` |
+
+Once all three URLs are provided, these can ship as a single commit with no planning overhead.
+
+---
 *Roadmap created: 2026-04-19*
-*Roadmap updated: 2026-04-21 — Phase 3 plans defined (3 plans), BLOG-01–05 annotated as deferred per D-26*
+*Roadmap updated: 2026-04-22 — Backlog section added: BL-01/02/03 social media links (Facebook, Instagram, Linktree) pending owner-supplied URLs*
 *Stack: Next.js App Router, Tailwind v4, shadcn/ui, Supabase, React Hook Form + Zod, Resend, MDX, Vercel*
