@@ -5,9 +5,9 @@ import { useRef } from 'react'
 type Client = { name: string; logoSrc?: string }
 
 const BASE_CLIENTS: Client[] = [
-  { name: 'AVIS' },
-  { name: 'Zipcar' },
-  { name: 'Michael and Sons' },
+  { name: 'AVIS', logoSrc: '/logos/avis-budget-group-logo-png_seeklogo-317428.webp' },
+  { name: 'Zipcar', logoSrc: '/logos/zipcar-logo-png_seeklogo-333354.webp' },
+  { name: 'Michael and Sons', logoSrc: '/logos/michael-and-son-logo@2x_b12650.webp' },
 ]
 
 // Repeat 4× so one set is always wider than the widest viewport
