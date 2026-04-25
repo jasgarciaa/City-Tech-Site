@@ -21,7 +21,8 @@
       "Bash(grep -c \"  {$\" \"data/services.ts\")",
       "Bash(git worktree *)",
       "Bash(git branch *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "mcp__claude_ai_Vercel__list_teams"
     ]
   }
 }
