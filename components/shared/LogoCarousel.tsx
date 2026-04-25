@@ -7,7 +7,8 @@ type Client = { name: string; logoSrc?: string }
 const BASE_CLIENTS: Client[] = [
   { name: 'AVIS', logoSrc: '/logos/avis-budget-group-logo-png_seeklogo-317428.webp' },
   { name: 'Zipcar', logoSrc: '/logos/zipcar-logo-png_seeklogo-333354.webp' },
-  { name: 'Michael and Sons', logoSrc: '/logos/michael-and-son-logo@2x_b12650.webp' },
+  { name: 'Michael and Sons', logoSrc: '/logos/New-michael-and-sons.webp' },
+  { name: 'City Tech', logoSrc: '/logos/New-citytech-logo.jpeg' },
 ]
 
 // Repeat 4× so one set is always wider than the widest viewport
@@ -20,12 +21,12 @@ const SET: Client[] = [
 
 function ClientTile({ name, logoSrc }: Client) {
   return (
-    <div className="flex min-w-[260px] h-28 shrink-0 items-center justify-center rounded-md border border-border bg-white px-8 shadow-sm transition-shadow duration-200 hover:shadow-md">
+    <div className="flex min-w-[280px] h-32 shrink-0 items-center justify-center rounded-md border border-border bg-white px-8 shadow-sm transition-shadow duration-200 hover:shadow-md">
       {logoSrc ? (
         <img
           src={logoSrc}
           alt={name}
-          className="max-h-16 max-w-[200px] object-contain"
+          className="max-h-20 max-w-[220px] object-contain"
         />
       ) : (
         <span className="text-base font-semibold tracking-tight text-foreground">
