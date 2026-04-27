@@ -39,7 +39,7 @@ export default function VehicleMakesSection() {
               key={make.name}
               className="group flex flex-col items-center justify-center gap-2 rounded-lg border border-border bg-background p-4 transition-all duration-200 hover:border-primary hover:shadow-sm"
             >
-              <div className="flex h-12 w-full items-center justify-center grayscale transition-[filter] duration-200 group-hover:grayscale-0">
+              <div className="flex h-12 w-full items-center justify-center rounded bg-white px-2">
                 <Image
                   src={`/logos/makes/${make.logo}`}
                   alt={make.name}
