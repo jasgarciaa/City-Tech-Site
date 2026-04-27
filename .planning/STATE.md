@@ -109,9 +109,10 @@ None currently.
 
 ## Session Continuity
 
-**To resume:** Read ROADMAP.md for phase structure. Read this file for current position and open decisions. Run `/gsd:plan-phase 1` to generate the Phase 1 plan before starting implementation.
+**Last session:** 2026-04-27
+**Stopped at:** Resumed session. Paused at Plan 03-03 Task 2 — human verification gate blocked on client providing Supabase + Resend credentials.
 
-**Next action:** `/gsd:plan-phase 1`
+**Next action:** Once client provides credentials (.env.local populated), walk through 03-03 Task 2 verification sections A–K. Type "approved" → create 03-03-SUMMARY.md → run gsd-verifier → complete milestone.
 
 ---
 *State initialized: 2026-04-19 after roadmap creation*

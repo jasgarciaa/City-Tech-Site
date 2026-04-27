@@ -1,25 +1,25 @@
 import Image from 'next/image'
 
 const MAKES = [
-  { name: 'Acura',       slug: 'acura'       },
-  { name: 'Chevrolet',   slug: 'chevrolet'   },
-  { name: 'Chrysler',    slug: 'chrysler'    },
-  { name: 'Dodge',       slug: 'dodge'       },
-  { name: 'Ford',        slug: 'ford'        },
-  { name: 'GMC',         slug: 'gmc'         },
-  { name: 'Honda',       slug: 'honda'       },
-  { name: 'Hyundai',     slug: 'hyundai'     },
-  { name: 'Infiniti',    slug: 'infiniti'    },
-  { name: 'Jeep',        slug: 'jeep'        },
-  { name: 'Kia',         slug: 'kia'         },
-  { name: 'Lexus',       slug: 'lexus'       },
-  { name: 'Mazda',       slug: 'mazda'       },
-  { name: 'Mitsubishi',  slug: 'mitsubishi'  },
-  { name: 'Nissan',      slug: 'nissan'      },
-  { name: 'Subaru',      slug: 'subaru'      },
-  { name: 'Toyota',      slug: 'toyota'      },
-  { name: 'Volkswagen',  slug: 'volkswagen'  },
-  { name: 'Volvo',       slug: 'volvo'       },
+  { name: 'Acura',       logo: 'acura-logo.webp'              },
+  { name: 'Chevrolet',   logo: 'chevrolet-logo.webp'          },
+  { name: 'Chrysler',    logo: 'chrysler-logo.webp'           },
+  { name: 'Dodge',       logo: 'dodge-logo.webp'              },
+  { name: 'Ford',        logo: 'ford-logo-vector.webp'        },
+  { name: 'GMC',         logo: 'gmc-logo.webp'                },
+  { name: 'Honda',       logo: 'honda-logo.webp'              },
+  { name: 'Hyundai',     logo: 'hyundai-logo.webp'            },
+  { name: 'Infiniti',    logo: 'infiniti-logo.webp'           },
+  { name: 'Jeep',        logo: 'jeep-logo.webp'               },
+  { name: 'Kia',         logo: 'kia-logo.webp'                },
+  { name: 'Lexus',       logo: 'lexus-logo.webp'              },
+  { name: 'Mazda',       logo: 'mazda-logo.webp'              },
+  { name: 'Mitsubishi',  logo: 'mitsubishi-logo.webp'         },
+  { name: 'Nissan',      logo: 'nissan-logo.webp'             },
+  { name: 'Subaru',      logo: 'subaru-logo.webp'             },
+  { name: 'Toyota',      logo: 'toyota-logo-transparent-2.webp' },
+  { name: 'Volkswagen',  logo: 'vw-logo.webp'                 },
+  { name: 'Volvo',       logo: 'volvo-logo.webp'              },
 ]
 
 export default function VehicleMakesSection() {
@@ -36,12 +36,12 @@ export default function VehicleMakesSection() {
         <div className="mt-10 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7">
           {MAKES.map((make) => (
             <div
-              key={make.slug}
+              key={make.name}
               className="group flex flex-col items-center justify-center gap-2 rounded-lg border border-border bg-background p-4 transition-all duration-200 hover:border-primary hover:shadow-sm"
             >
               <div className="flex h-12 w-full items-center justify-center grayscale transition-[filter] duration-200 group-hover:grayscale-0">
                 <Image
-                  src={`/logos/makes/${make.slug}.svg`}
+                  src={`/logos/makes/${make.logo}`}
                   alt={make.name}
                   width={80}
                   height={40}

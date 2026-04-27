@@ -82,14 +82,48 @@ export const services: ServiceDefinition[] = [
       ],
     },
   },
-  // --- Electronics (order 1–8) ---
+  // --- Electronics (order 1–9) ---
+  {
+    slug: 'telematic-fleet-devices',
+    name: 'Telematic Fleet Devices',
+    shortDescription: 'Professional installation of GPS telematics devices for fleet visibility, driver monitoring, and vehicle diagnostics.',
+    category: 'electronics',
+    featured: false,
+    order: 1,
+    pageContent: {
+      problem: 'Without real-time data, managing a fleet means guessing at vehicle location, driver behavior, and maintenance needs — problems that compound quickly at scale.',
+      solution: 'CityTech installs professional telematics devices that connect your fleet to a management platform, delivering live GPS location, mileage tracking, driver behavior alerts, and vehicle diagnostic data all accessible from a single dashboard.',
+      process: [
+        'We assess your fleet size, existing management platform, and specific data requirements',
+        'We install telematics devices across your vehicles at your location with minimal downtime per vehicle',
+        'We configure each device to your platform, verify live data transmission, and walk your team through the dashboard before handoff',
+      ],
+    },
+  },
+  {
+    slug: 'oem-radio-repair',
+    name: 'OEM Radio Repair',
+    shortDescription: 'Factory radio diagnosis and repair — restore OEM audio, display, and integrated features without a dealer replacement.',
+    category: 'electronics',
+    featured: false,
+    order: 2,
+    pageContent: {
+      problem: 'A failed factory radio takes your audio, backup camera display, and integrated controls with it — and dealer replacement quotes are often steep.',
+      solution: 'CityTech diagnoses OEM radio faults and performs targeted repairs, restoring factory functionality at a fraction of dealer cost. Where repair isn\'t viable, we source and install a matching OEM unit.',
+      process: [
+        'We diagnose the fault: power loss, display failure, module error, or software corruption',
+        'We perform component-level repair or source a compatible OEM replacement unit',
+        'We reinstall, code if required (Ford SYNC, GM, Chrysler, etc.), and verify all factory functions before handoff',
+      ],
+    },
+  },
   {
     slug: 'car-audio-installation',
     name: 'Car Audio Installation',
     shortDescription: 'Professional stereo, speaker, and amplifier installation for any vehicle.',
     category: 'electronics',
     featured: true,
-    order: 1,
+    order: 3,
     pageContent: {
       problem: 'Your factory stereo sounds flat and lacks the features you need.',
       solution: 'CityTech installs aftermarket audio systems for any vehicle: head units, speakers, subwoofers, and amplifiers matched to your budget.',
@@ -106,7 +140,7 @@ export const services: ServiceDefinition[] = [
     shortDescription: 'Reliable vehicle alarm and deterrent systems installed at your location.',
     category: 'electronics',
     featured: false,
-    order: 2,
+    order: 4,
     pageContent: {
       problem: 'You want to protect your vehicle from theft and break-ins without complicated wiring.',
       solution: 'CityTech installs alarm systems with shock sensors, sirens, and remote disarm. Clean installation, tested before we leave.',
@@ -123,7 +157,7 @@ export const services: ServiceDefinition[] = [
     shortDescription: 'In-vehicle screens and entertainment systems for rear passengers and drivers.',
     category: 'electronics',
     featured: false,
-    order: 3,
+    order: 5,
     pageContent: {
       problem: 'Long drives are hard on passengers without in-vehicle entertainment, especially for families.',
       solution: 'CityTech installs headrest monitors, overhead screens, and multimedia systems. Clean installations that look factory-fitted.',
@@ -140,7 +174,7 @@ export const services: ServiceDefinition[] = [
     shortDescription: 'Rearview camera systems for safer reversing, installed while you wait.',
     category: 'electronics',
     featured: false,
-    order: 4,
+    order: 6,
     pageContent: {
       problem: 'Reversing without a camera is stressful, and factory cameras can be expensive to repair or add.',
       solution: 'CityTech installs aftermarket backup cameras with clear night-vision capable displays, integrated into your existing screen or a new monitor.',
@@ -157,10 +191,10 @@ export const services: ServiceDefinition[] = [
     shortDescription: 'Start and climate-condition your vehicle from your phone or key fob.',
     category: 'electronics',
     featured: true,
-    order: 5,
+    order: 7,
     pageContent: {
       problem: 'Stepping into a freezing or overheating vehicle every morning is an avoidable problem.',
-      solution: 'CityTech installs remote start systems, including Compustar, that let you warm up or cool down your vehicle before you get in.',
+      solution: 'CityTech installs remote start systems that let you warm up or cool down your vehicle before you get in.',
       process: [
         'We confirm compatibility with your vehicle\'s make, model, and year',
         'We install the remote start module and connect all required harnesses',
@@ -174,7 +208,7 @@ export const services: ServiceDefinition[] = [
     shortDescription: 'Aftermarket GPS and navigation head units for vehicles without built-in nav.',
     category: 'electronics',
     featured: false,
-    order: 6,
+    order: 8,
     pageContent: {
       problem: 'Your vehicle lacks built-in navigation and phone mounts are an unreliable substitute.',
       solution: 'CityTech installs aftermarket head units with Android Auto, Apple CarPlay, and built-in GPS navigation. A clean, permanent solution.',
@@ -191,7 +225,7 @@ export const services: ServiceDefinition[] = [
     shortDescription: 'GPS vehicle tracking and security systems for personal and fleet vehicles.',
     category: 'electronics',
     featured: false,
-    order: 7,
+    order: 9,
     pageContent: {
       problem: 'Knowing where your vehicle is and getting alerted to unauthorized movement matters for both personal owners and businesses.',
       solution: 'CityTech installs GPS tracking and security systems that give you real-time location data and tamper alerts through a mobile app.',
@@ -199,40 +233,6 @@ export const services: ServiceDefinition[] = [
         'We discuss your tracking and alert requirements: personal use, fleet monitoring, or theft recovery',
         'We install the tracker in a concealed, power-stable location',
         'We configure the app, test location accuracy, and confirm alert triggers with you',
-      ],
-    },
-  },
-  {
-    slug: 'compustar-products',
-    name: 'Compustar Products',
-    shortDescription: 'Authorized Compustar remote start and security installation for any vehicle.',
-    category: 'electronics',
-    featured: false,
-    order: 8,
-    pageContent: {
-      problem: 'Compustar systems offer long-range remote start and strong security features, but installation must be done professionally to keep the warranty valid.',
-      solution: 'CityTech installs the full Compustar line: remote start, security, and DroneMobile smartphone integration, with clean wiring and full system activation.',
-      process: [
-        'We confirm the correct Compustar kit for your vehicle and feature requirements',
-        'We install all modules, harnesses, and antennas to Compustar specifications',
-        'We activate DroneMobile (if applicable), test all functions, and register your warranty',
-      ],
-    },
-  },
-  {
-    slug: 'telematic-fleet-devices',
-    name: 'Telematic Fleet Devices',
-    shortDescription: 'Professional installation of GPS telematics devices for fleet visibility, driver monitoring, and vehicle diagnostics.',
-    category: 'electronics',
-    featured: false,
-    order: 9,
-    pageContent: {
-      problem: 'Without real-time data, managing a fleet means guessing at vehicle location, driver behavior, and maintenance needs — problems that compound quickly at scale.',
-      solution: 'CityTech installs professional telematics devices that connect your fleet to a management platform, delivering live GPS location, mileage tracking, driver behavior alerts, and vehicle diagnostic data all accessible from a single dashboard.',
-      process: [
-        'We assess your fleet size, existing management platform, and specific data requirements',
-        'We install telematics devices across your vehicles at your location with minimal downtime per vehicle',
-        'We configure each device to your platform, verify live data transmission, and walk your team through the dashboard before handoff',
       ],
     },
   },
