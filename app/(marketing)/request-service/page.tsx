@@ -3,6 +3,17 @@ import { services } from '@/data/services'
 import { Button } from '@/components/ui/button'
 import ServiceRequestForm from '@/components/request-service/ServiceRequestForm'
 
+// =====================================================================
+// BLOG SCOPE ACKNOWLEDGMENT (Phase 3 — D-26)
+// BLOG-01, BLOG-02, BLOG-03, BLOG-04, BLOG-05 are EXPLICITLY DEFERRED.
+// No /blog route, no MDX scaffold, no blog index, no gray-matter, no
+// @next/mdx integration is implemented in this phase per user decision
+// D-26 in .planning/phases/03-lead-capture-seo/03-CONTEXT.md.
+// Owner is not interested in text blogging for v1.
+// If a future video showcase page is needed, it will be a NEW capability
+// (/videos or /gallery), not a blog.
+// =====================================================================
+
 export const metadata: Metadata = {
   title: 'Request Service',
   description:
