@@ -2,11 +2,11 @@
 
 import { useRef } from 'react'
 
-type Client = { name: string; logoSrc?: string }
+type Client = { name: string; logoSrc?: string; logoClassName?: string }
 
 const BASE_CLIENTS: Client[] = [
-  { name: 'AVIS', logoSrc: '/logos/avis-budget-group-logo-png_seeklogo-317428.webp' },
-  { name: 'Zipcar', logoSrc: '/logos/zipcar-logo-png_seeklogo-333354.webp' },
+  { name: 'AVIS', logoSrc: '/logos/avis-budget-group-logo-png_seeklogo-317428.webp', logoClassName: 'max-h-28 max-w-[260px]' },
+  { name: 'Zipcar', logoSrc: '/logos/zipcar-logo-png_seeklogo-333354.webp', logoClassName: 'max-h-28 max-w-[260px]' },
   { name: 'Michael and Sons', logoSrc: '/logos/New-michael-and-sons.webp' },
 ]
 
@@ -18,14 +18,14 @@ const SET: Client[] = [
   ...BASE_CLIENTS,
 ]
 
-function ClientTile({ name, logoSrc }: Client) {
+function ClientTile({ name, logoSrc, logoClassName }: Client) {
   return (
     <div className="flex min-w-[280px] h-32 shrink-0 items-center justify-center rounded-md border border-border bg-white px-8 shadow-sm transition-shadow duration-200 hover:shadow-md">
       {logoSrc ? (
         <img
           src={logoSrc}
           alt={name}
-          className="max-h-20 max-w-[220px] object-contain"
+          className={`object-contain ${logoClassName ?? 'max-h-20 max-w-[220px]'}`}
         />
       ) : (
         <span className="text-base font-semibold tracking-tight text-foreground">
@@ -62,7 +62,7 @@ export default function LogoCarousel({ ariaLabel = 'Our clients' }: { ariaLabel?
           ))}
         </div>
       </div>
-      <p className="mt-6 text-center text-sm text-muted-foreground">And more</p>
+      <p className="mt-6 text-center text-base font-semibold text-foreground">And more</p>
     </section>
   )
 }

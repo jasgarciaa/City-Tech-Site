@@ -22,10 +22,10 @@ export default function Footer() {
             <Image
               src="/logos/New-citytech-logo.jpeg"
               alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
-              height={52}
-              width={200}
-              sizes="200px"
-              className="h-11 w-auto"
+              height={64}
+              width={240}
+              sizes="240px"
+              className="h-16 w-auto object-contain"
             />
             <p className="mt-3 text-sm text-muted-foreground">
               Mobile Automotive Locksmith and Electronics Service
@@ -34,17 +34,20 @@ export default function Footer() {
               Serving DC, Maryland &amp; Virginia
             </p>
             {/* Trust signals (D-15) */}
-            <div className="mt-4 space-y-1">
+            <div className="mt-4 space-y-2">
               <p className="text-sm font-semibold text-accent">Est. 2016</p>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-3">
                 <Image
                   src="/logos/NASTF-Logo.webp"
                   alt="NASTF — National Automotive Service Task Force"
-                  height={24}
-                  width={60}
-                  className="h-6 w-auto"
+                  height={40}
+                  width={100}
+                  className="h-10 w-auto"
                 />
-                <p className="text-sm text-foreground">Background-Checked Employees</p>
+                <div>
+                  <p className="text-sm font-semibold text-foreground">NASTF Certified</p>
+                  <p className="text-sm text-muted-foreground">Background-Checked Employees</p>
+                </div>
               </div>
             </div>
           </div>

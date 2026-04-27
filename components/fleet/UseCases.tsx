@@ -1,4 +1,4 @@
-import { Wrench, KeyRound, Zap } from 'lucide-react'
+import { Wrench, KeyRound, Zap, Radio } from 'lucide-react'
 
 const USE_CASES = [
   {
@@ -16,6 +16,11 @@ const USE_CASES = [
     title: 'Bulk Remote Start & Security',
     body: 'Remote start, tracking, and alarm installations at scale - reduce per-vehicle cost and standardize driver experience.',
   },
+  {
+    icon: Radio,
+    title: 'Telematic Fleet Devices',
+    body: 'Professional installation of GPS telematics devices for live fleet visibility, driver monitoring, and vehicle diagnostics — all in one dashboard.',
+  },
 ]
 
 export default function UseCases() {
@@ -23,7 +28,7 @@ export default function UseCases() {
     <section className="bg-muted py-12 px-6">
       <div className="mx-auto max-w-5xl">
         <h2 className="text-xl font-semibold text-foreground">What We Do for Fleets</h2>
-        <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {USE_CASES.map(({ icon: Icon, title, body }) => (
             <article key={title} className="rounded-md border border-border bg-background p-5">
               <Icon size={24} className="text-primary" aria-hidden="true" />

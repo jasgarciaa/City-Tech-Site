@@ -48,7 +48,7 @@ export default function MobileNav() {
               alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
               height={52}
               width={200}
-              className="h-9 w-auto"
+              className="h-10 w-auto max-w-[180px] object-contain"
             />
             {/* Visually hidden title for screen reader context */}
             <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
@@ -56,12 +56,12 @@ export default function MobileNav() {
 
           <nav aria-label="Mobile navigation" className="flex flex-col overflow-y-auto">
 
-            {/* Electronics services */}
+            {/* Locksmith services */}
             <div className="border-b border-border p-4">
               <p className="mb-2 text-xs font-normal uppercase tracking-[0.08em] text-muted-foreground">
-                Electronics
+                Locksmith
               </p>
-              {electronics.map(s => (
+              {locksmith.map(s => (
                 <Link
                   key={s.slug}
                   href={`/services/${s.slug}`}
@@ -73,12 +73,12 @@ export default function MobileNav() {
               ))}
             </div>
 
-            {/* Locksmith services */}
+            {/* Electronics services */}
             <div className="border-b border-border p-4">
               <p className="mb-2 text-xs font-normal uppercase tracking-[0.08em] text-muted-foreground">
-                Locksmith
+                Electronics
               </p>
-              {locksmith.map(s => (
+              {electronics.map(s => (
                 <Link
                   key={s.slug}
                   href={`/services/${s.slug}`}

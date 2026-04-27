@@ -27,13 +27,13 @@ export default function DesktopNav() {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="grid w-[500px] grid-cols-2 gap-6 bg-muted p-5 rounded-md border border-border">
-                {/* Electronics group */}
+                {/* Locksmith group */}
                 <div>
                   <p className="mb-3 text-xs font-normal uppercase tracking-[0.08em] text-muted-foreground">
-                    Electronics
+                    Locksmith
                   </p>
                   <ul className="space-y-0.5">
-                    {electronics.map(s => (
+                    {locksmith.map(s => (
                       <li key={s.slug}>
                         <NavigationMenuLink asChild>
                           <Link
@@ -48,13 +48,13 @@ export default function DesktopNav() {
                   </ul>
                 </div>
 
-                {/* Locksmith group */}
+                {/* Electronics group */}
                 <div>
                   <p className="mb-3 text-xs font-normal uppercase tracking-[0.08em] text-muted-foreground">
-                    Locksmith
+                    Electronics
                   </p>
                   <ul className="space-y-0.5">
-                    {locksmith.map(s => (
+                    {electronics.map(s => (
                       <li key={s.slug}>
                         <NavigationMenuLink asChild>
                           <Link
