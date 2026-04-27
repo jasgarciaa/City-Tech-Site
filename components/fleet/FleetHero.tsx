@@ -9,7 +9,7 @@ export default function FleetHero() {
           Fleet &amp; Commercial Services
         </h1>
         <p className="mt-4 text-base leading-relaxed text-white/85 max-w-3xl mx-auto">
-          City Tech partners with dealerships, rental companies, and commercial fleets for on-site automotive electronics and locksmith services.
+          CityTech partners with dealerships, rental companies, and commercial fleets for on-site automotive electronics and locksmith services.
         </p>
       </div>
     </section>

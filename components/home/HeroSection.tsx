@@ -16,7 +16,7 @@ export default function HeroSection() {
           <span className="text-accent">We come to you.</span>
         </h1>
         <p className="mt-4 text-base leading-relaxed text-white/85 max-w-3xl mx-auto">
-          City Tech provides mobile car audio, electronics installation, and locksmith services
+          CityTech provides mobile car audio, electronics installation, and locksmith services
           throughout the DC, Maryland, and Virginia region.
         </p>
         <p className="mt-4 text-sm text-white/70">Available when you need us</p>
@@ -34,7 +34,7 @@ export default function HeroSection() {
             variant="outline"
             className="min-h-[44px] border-white bg-transparent text-white hover:bg-white/10"
           >
-            <a href="tel:+17033436234" aria-label="Call City Tech at (703) 343-6234">
+            <a href="tel:+17033436234" aria-label="Call CityTech at (703) 343-6234">
               Call Now
             </a>
           </Button>

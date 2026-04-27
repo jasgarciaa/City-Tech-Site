@@ -5,7 +5,7 @@ export default function TrustSignalsSection() {
     <section className="bg-muted py-12 px-6">
       <div className="mx-auto max-w-7xl">
         <p className="text-center text-sm uppercase tracking-[0.08em] text-muted-foreground font-normal mb-8">
-          Why Choose City Tech
+          Why Choose CityTech
         </p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="text-center flex flex-col items-center">

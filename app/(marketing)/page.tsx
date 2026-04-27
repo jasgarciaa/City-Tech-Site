@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   description:
     'Mobile automotive electronics and locksmith services throughout the DC, Maryland, and Virginia region. Available when you need us.',
   openGraph: {
-    title: 'City Tech — Mobile Automotive Locksmith and Electronics Service',
+    title: 'CityTech — Mobile Automotive Locksmith and Electronics Service',
     description:
       'Mobile automotive electronics and locksmith services throughout the DC, Maryland, and Virginia region. Available when you need us.',
     url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechllc.com',
-    siteName: 'City Tech',
+    siteName: 'CityTech',
     type: 'website',
   },
 }

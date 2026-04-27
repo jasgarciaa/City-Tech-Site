@@ -3,23 +3,23 @@ import { Wrench, KeyRound, Zap, Radio } from 'lucide-react'
 const USE_CASES = [
   {
     icon: Wrench,
-    title: 'Multi-Vehicle Electronics Installation',
-    body: 'Consistent, brand-standard installation of audio, navigation, and camera systems across your entire fleet - scheduled on your yard.',
+    title: 'Fleet Electronics Installation',
+    body: 'Audio, cameras, and navigation installed on your lot. We work through your inventory so every vehicle comes out the same — no sending them out one at a time.',
   },
   {
     icon: KeyRound,
     title: 'Fleet Key Programming',
-    body: 'Transponder programming, duplicate fobs, and ignition rekey for bulk vehicle intakes - no dealership tow, no downtime.',
+    body: 'Keys cut and programmed on-site when vehicles arrive. No dealer, no tow, no vehicles sitting idle waiting on an appointment.',
   },
   {
     icon: Zap,
-    title: 'Bulk Remote Start & Security',
-    body: 'Remote start, tracking, and alarm installations at scale - reduce per-vehicle cost and standardize driver experience.',
+    title: 'Remote Start & Security',
+    body: 'Remote start, alarms, and tracking across your fleet. Every vehicle gets the same setup, and the per-unit price drops the more you have.',
   },
   {
     icon: Radio,
     title: 'Telematic Fleet Devices',
-    body: 'Professional installation of GPS telematics devices for live fleet visibility, driver monitoring, and vehicle diagnostics — all in one dashboard.',
+    body: 'We install and wire the telematics hardware, then configure each device to your platform. Live GPS, driver behavior data, and diagnostics start coming in from day one.',
   },
 ]
 

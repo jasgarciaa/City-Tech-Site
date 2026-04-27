@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   description:
     'Mobile automotive electronics and locksmith services for dealerships, rental companies, and commercial fleets in the DC, Maryland, and Virginia region.',
   openGraph: {
-    title: 'Fleet Services | City Tech',
+    title: 'Fleet Services | CityTech',
     description:
       'Mobile automotive electronics and locksmith services for dealerships, rental companies, and commercial fleets in the DC, Maryland, and Virginia region.',
     url: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechllc.com'}/fleet`,
-    siteName: 'City Tech',
+    siteName: 'CityTech',
     type: 'website',
   },
 }

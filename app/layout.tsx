@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'City Tech, LLC',
+  name: 'CityTech, LLC',
   description:
     'Mobile automotive locksmith and electronics services for the DC, Maryland, and Virginia region.',
   telephone: '+17033436234',

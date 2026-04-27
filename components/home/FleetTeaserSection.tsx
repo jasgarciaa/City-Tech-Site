@@ -11,7 +11,7 @@ export default function FleetTeaserSection() {
             Fleet &amp; Commercial
           </p>
           <h2 className="mt-2 text-xl font-semibold text-foreground">
-            City Tech Serves Fleets Too
+            CityTech Serves Fleets Too
           </h2>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
             Dealerships, rental companies, delivery fleets. We handle multi-vehicle electronics and

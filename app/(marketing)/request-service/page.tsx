@@ -6,13 +6,13 @@ import ServiceRequestForm from '@/components/request-service/ServiceRequestForm'
 export const metadata: Metadata = {
   title: 'Request Service',
   description:
-    'Submit a service request to City Tech. We come to you anywhere in the DC, Maryland, and Virginia region.',
+    'Submit a service request to CityTech. We come to you anywhere in the DC, Maryland, and Virginia region.',
   openGraph: {
-    title: 'Request Service | City Tech',
+    title: 'Request Service | CityTech',
     description:
-      'Submit a service request to City Tech. We come to you anywhere in the DC, Maryland, and Virginia region.',
+      'Submit a service request to CityTech. We come to you anywhere in the DC, Maryland, and Virginia region.',
     url: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechllc.com'}/request-service`,
-    siteName: 'City Tech',
+    siteName: 'CityTech',
     type: 'website',
   },
 }

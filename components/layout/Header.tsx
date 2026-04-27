@@ -13,7 +13,7 @@ export default function Header() {
         <Link href="/" aria-label="Citytech — home">
           <Image
             src="/logos/New-citytech-logo.jpeg"
-            alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
+            alt="CityTech — Mobile Automotive Locksmith and Electronics Service"
             height={64}
             width={240}
             priority
@@ -30,7 +30,7 @@ export default function Header() {
           {/* Phone number — visible on desktop, hidden on mobile (MobileNav handles mobile) */}
           <a
             href="tel:+17033436234"
-            aria-label="Call City Tech at (703) 343-6234"
+            aria-label="Call CityTech at (703) 343-6234"
             className="hidden text-sm font-semibold text-primary md:block transition-colors hover:text-accent"
           >
             (703) 343-6234
@@ -42,7 +42,7 @@ export default function Header() {
             size="sm"
             className="hidden min-h-[44px] bg-primary text-primary-foreground hover:brightness-110 active:brightness-95 focus-visible:outline-accent md:flex"
           >
-            <a href="tel:+17033436234" aria-label="Call City Tech at (703) 343-6234">
+            <a href="tel:+17033436234" aria-label="Call CityTech at (703) 343-6234">
               Call Now
             </a>
           </Button>

@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <Image
               src="/logos/New-citytech-logo.jpeg"
-              alt="City Tech — Mobile Automotive Locksmith and Electronics Service"
+              alt="CityTech — Mobile Automotive Locksmith and Electronics Service"
               height={64}
               width={240}
               sizes="240px"
@@ -135,7 +135,7 @@ export default function Footer() {
 
           {/* Copyright — right on desktop, below on mobile (D-16) */}
           <p className="text-sm text-muted-foreground">
-            © 2026 City Tech, LLC. All rights reserved.
+            © 2026 CityTech, LLC. All rights reserved.
           </p>
 
         </div>

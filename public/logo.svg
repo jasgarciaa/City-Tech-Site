@@ -34,8 +34,8 @@
   <circle cx="44" cy="44" r="4" stroke="#1B3A8F" stroke-width="2" fill="none" />
   <!-- Key teeth -->
   <polyline points="62,44 62,47 67,47 67,44 72,44 72,47" stroke="#00AEEF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-  <!-- "City Tech" wordmark -->
-  <text x="134" y="24" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1B3A8F" letter-spacing="-0.3">City Tech</text>
+  <!-- "CityTech" wordmark -->
+  <text x="134" y="24" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1B3A8F" letter-spacing="-0.3">CityTech</text>
   <text x="134" y="38" font-family="Arial, sans-serif" font-size="8" font-weight="400" fill="#1B3A8F" letter-spacing="0.2">Mobile Automotive Services</text>
   <text x="134" y="49" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#00AEEF" letter-spacing="0.3">Est. 2016</text>
 </svg>

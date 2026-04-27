@@ -41,7 +41,7 @@ export default function LogoCarousel({ ariaLabel = 'Our clients' }: { ariaLabel?
 
   return (
     <section className="overflow-hidden bg-background py-10">
-      <p className="mb-6 text-center text-xs font-normal uppercase tracking-[0.08em] text-muted-foreground">
+      <p className="mb-6 text-center text-base font-semibold text-foreground">
         Trusted by
       </p>
       <div
