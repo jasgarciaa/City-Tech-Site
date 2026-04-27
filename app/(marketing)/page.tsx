@@ -3,6 +3,7 @@ import { services } from '@/data/services'
 import HeroSection from '@/components/home/HeroSection'
 import ServicesSection from '@/components/home/ServicesSection'
 import TrustSignalsSection from '@/components/home/TrustSignalsSection'
+import VehicleMakesSection from '@/components/home/VehicleMakesSection'
 import FleetTeaserSection from '@/components/home/FleetTeaserSection'
 import LogoCarousel from '@/components/shared/LogoCarousel'
 import ServiceAreaSection from '@/components/home/ServiceAreaSection'
@@ -29,6 +30,7 @@ export default function HomePage() {
       <HeroSection />
       <ServicesSection services={services} />
       <TrustSignalsSection />
+      <VehicleMakesSection />
       <FleetTeaserSection />
       <LogoCarousel ariaLabel="Our clients" />
       <ServiceAreaSection />

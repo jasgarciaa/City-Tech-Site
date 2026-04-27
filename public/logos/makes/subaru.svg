@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" fill="#003399">
+  <!-- Large star (left) -->
+  <circle cx="28" cy="30" r="10"/>
+  <!-- Five smaller stars (right cluster) -->
+  <circle cx="62" cy="18" r="6"/>
+  <circle cx="78" cy="24" r="6"/>
+  <circle cx="84" cy="38" r="6"/>
+  <circle cx="72" cy="48" r="6"/>
+  <circle cx="57" cy="44" r="6"/>
+</svg>

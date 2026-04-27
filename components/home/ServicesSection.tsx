@@ -18,7 +18,7 @@ interface ServicesSectionProps {
 
 export default function ServicesSection({ services }: ServicesSectionProps) {
   return (
-    <section className="bg-background py-16 px-6">
+    <section className="bg-background bg-pattern-a py-16 px-6">
       <div className="mx-auto max-w-7xl">
         <p className="text-center text-sm uppercase tracking-[0.08em] text-muted-foreground font-normal">
           Our Services

@@ -81,7 +81,7 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Foundation | 0/3 | Planned | - |
 | 2. Core Pages | 4/4 | Complete |  |
-| 3. Lead Capture + SEO | 0/3 | Planned | - |
+| 3. Lead Capture + SEO | 2/3 | In Progress|  |
 
 ---
 

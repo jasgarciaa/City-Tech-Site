@@ -53,7 +53,7 @@ export default function QuickContactForm({ services }: QuickContactFormProps) {
   }
 
   return (
-    <section className="bg-background py-12 px-6">
+    <section className="bg-background bg-pattern-c py-12 px-6">
       <div className="mx-auto max-w-md">
         <h2 className="text-xl font-semibold text-foreground text-center mb-6">
           Get a Free Quote

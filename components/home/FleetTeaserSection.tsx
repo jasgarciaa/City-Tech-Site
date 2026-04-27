@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 
 export default function FleetTeaserSection() {
   return (
-    <section className="bg-background py-12 px-6">
+    <section className="bg-background bg-pattern-b py-12 px-6">
       <div className="mx-auto max-w-7xl">
         <div className="border-l-4 border-primary pl-6 md:pl-8 max-w-3xl">
           <p className="text-sm uppercase tracking-[0.08em] text-accent font-normal">

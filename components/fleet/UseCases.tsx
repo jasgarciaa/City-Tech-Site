@@ -14,7 +14,7 @@ const USE_CASES = [
   {
     icon: Zap,
     title: 'Remote Start & Security',
-    body: 'Remote start, alarms, and tracking across your fleet. Every vehicle gets the same setup, and the per-unit price drops the more you have.',
+    body: 'Remote start, alarms, and tracking across your fleet. Every vehicle gets the same setup.',
   },
   {
     icon: Radio,

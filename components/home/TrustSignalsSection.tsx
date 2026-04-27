@@ -12,7 +12,7 @@ export default function TrustSignalsSection() {
             <Calendar aria-hidden="true" size={32} className="text-accent" />
             <h3 className="mt-3 text-xl font-semibold text-foreground">Est. 2016</h3>
             <p className="mt-2 text-base leading-relaxed text-foreground max-w-xs">
-              Serving the DMV region since 2016
+              Serving the Washington metropolitan area since 2016
             </p>
           </div>
           <div className="text-center flex flex-col items-center">
