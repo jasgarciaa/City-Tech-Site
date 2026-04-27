@@ -1,25 +1,25 @@
 import Image from 'next/image'
 
 const MAKES = [
-  { name: 'Acura',       logo: 'acura-logo.webp'              },
-  { name: 'Chevrolet',   logo: 'chevrolet-logo.webp'          },
-  { name: 'Chrysler',    logo: 'chrysler-logo.webp'           },
-  { name: 'Dodge',       logo: 'dodge-logo.webp'              },
-  { name: 'Ford',        logo: 'ford-logo-vector.webp'        },
-  { name: 'GMC',         logo: 'gmc-logo.webp'                },
-  { name: 'Honda',       logo: 'honda-logo.webp'              },
-  { name: 'Hyundai',     logo: 'hyundai-logo.webp'            },
-  { name: 'Infiniti',    logo: 'infiniti-logo.webp'           },
-  { name: 'Jeep',        logo: 'jeep-logo.webp'               },
-  { name: 'Kia',         logo: 'kia-logo.webp'                },
-  { name: 'Lexus',       logo: 'lexus-logo.webp'              },
-  { name: 'Mazda',       logo: 'mazda-logo.webp'              },
-  { name: 'Mitsubishi',  logo: 'mitsubishi-logo.webp'         },
-  { name: 'Nissan',      logo: 'nissan-logo.webp'             },
-  { name: 'Subaru',      logo: 'subaru-logo.webp'             },
-  { name: 'Toyota',      logo: 'toyota-logo-transparent-2.webp' },
-  { name: 'Volkswagen',  logo: 'vw-logo.webp'                 },
-  { name: 'Volvo',       logo: 'volvo-logo.webp'              },
+  { name: 'Acura',       logo: 'acura-logo.webp'                                    },
+  { name: 'Chevrolet',   logo: 'chevrolet-logo.webp'                                },
+  { name: 'Chrysler',    logo: 'chrysler-logo.webp'                                 },
+  { name: 'Dodge',       logo: 'dodge-logo.webp'                                    },
+  { name: 'Ford',        logo: 'ford-logo-vector.webp',  imgClass: 'h-full w-full'  },
+  { name: 'GMC',         logo: 'gmc-logo.webp'                                      },
+  { name: 'Honda',       logo: 'honda-logo.webp'                                    },
+  { name: 'Hyundai',     logo: 'hyundai-logo.webp'                                  },
+  { name: 'Infiniti',    logo: 'infiniti-logo.webp'                                 },
+  { name: 'Jeep',        logo: 'jeep-logo.webp'                                     },
+  { name: 'Kia',         logo: 'kia-logo.webp'                                      },
+  { name: 'Lexus',       logo: 'lexus-logo.webp'                                    },
+  { name: 'Mazda',       logo: 'mazda-logo.webp'                                    },
+  { name: 'Mitsubishi',  logo: 'mitsubishi-logo.webp'                               },
+  { name: 'Nissan',      logo: 'nissan-logo.webp'                                   },
+  { name: 'Subaru',      logo: 'subaru-logo.webp'                                   },
+  { name: 'Toyota',      logo: 'toyota-logo-transparent-2.webp'                     },
+  { name: 'Volkswagen',  logo: 'vw-logo.webp'                                       },
+  { name: 'Volvo',       logo: 'volvo-logo.webp'                                    },
 ]
 
 export default function VehicleMakesSection() {
@@ -46,7 +46,7 @@ export default function VehicleMakesSection() {
                   width={80}
                   height={40}
                   unoptimized
-                  className="h-10 w-auto object-contain"
+                  className={`${make.imgClass ?? 'h-10 w-auto'} object-contain`}
                 />
               </div>
               <span className="text-xs font-normal text-muted-foreground">{make.name}</span>

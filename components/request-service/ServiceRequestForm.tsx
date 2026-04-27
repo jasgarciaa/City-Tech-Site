@@ -150,7 +150,7 @@ export default function ServiceRequestForm({ services }: ServiceRequestFormProps
             <FormItem>
               <FormLabel className="text-sm font-semibold">Phone Number</FormLabel>
               <FormControl>
-                <Input type="tel" placeholder="(703) 555-0100" {...field} />
+                <Input type="tel" placeholder="7031234567" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

@@ -2,7 +2,7 @@
 
 import { z } from 'zod'
 import { Resend } from 'resend'
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '@supabase/supabase-js'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -44,7 +44,10 @@ export async function submitServiceRequest(payload: ServiceRequestPayload) {
     throw new Error('Invalid service request payload')
   }
 
-  const supabase = await createClient()
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!
+  )
 
   // Strip vin from DB payload — service_requests table has no vin column
   // Use .select('id') to detect silent RLS failure (missing anon INSERT policy returns

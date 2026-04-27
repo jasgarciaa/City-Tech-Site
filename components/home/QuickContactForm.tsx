@@ -97,7 +97,7 @@ export default function QuickContactForm({ services }: QuickContactFormProps) {
               <Input
                 id="qc-phone"
                 type="tel"
-                placeholder="(555) 555-5555"
+                placeholder="7031234567"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 aria-invalid={!!errors.phone}
