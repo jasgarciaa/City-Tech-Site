@@ -1,7 +1,7 @@
 const MAKES = [
   { name: 'Acura',       slug: 'acura'                  },
   { name: 'Chevrolet',   slug: 'chevrolet', scale: 3.4  },
-  { name: 'Chrysler',    slug: 'chrysler',  scale: 1.6  },
+  { name: 'Chrysler',    slug: 'chrysler',  scale: 1.3  },
   { name: 'Dodge',       slug: 'dodge'                  },
   { name: 'Ford',        slug: 'ford'                   },
   { name: 'GMC',         slug: 'gmc'                    },
