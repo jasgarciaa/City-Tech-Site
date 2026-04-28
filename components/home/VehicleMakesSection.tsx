@@ -1,23 +1,23 @@
 const MAKES = [
-  { name: 'Acura',       slug: 'acura'       },
-  { name: 'Chevrolet',   slug: 'chevrolet'   },
-  { name: 'Chrysler',    slug: 'chrysler'    },
-  { name: 'Dodge',       slug: 'dodge'       },
-  { name: 'Ford',        slug: 'ford'        },
-  { name: 'GMC',         slug: 'gmc'         },
-  { name: 'Honda',       slug: 'honda'       },
-  { name: 'Hyundai',     slug: 'hyundai'     },
-  { name: 'Infiniti',    slug: 'infiniti'    },
-  { name: 'Jeep',        slug: 'jeep'        },
-  { name: 'Kia',         slug: 'kia'         },
-  { name: 'Lexus',       slug: 'lexus'       },
-  { name: 'Mazda',       slug: 'mazda'       },
-  { name: 'Mitsubishi',  slug: 'mitsubishi'  },
-  { name: 'Nissan',      slug: 'nissan'      },
-  { name: 'Subaru',      slug: 'subaru'      },
-  { name: 'Toyota',      slug: 'toyota'      },
-  { name: 'Volkswagen',  slug: 'volkswagen'  },
-  { name: 'Volvo',       slug: 'volvo'       },
+  { name: 'Acura',       slug: 'acura'                  },
+  { name: 'Chevrolet',   slug: 'chevrolet', scale: 2.6  },
+  { name: 'Chrysler',    slug: 'chrysler'               },
+  { name: 'Dodge',       slug: 'dodge'                  },
+  { name: 'Ford',        slug: 'ford'                   },
+  { name: 'GMC',         slug: 'gmc'                    },
+  { name: 'Honda',       slug: 'honda'                  },
+  { name: 'Hyundai',     slug: 'hyundai'                },
+  { name: 'Infiniti',    slug: 'infiniti'               },
+  { name: 'Jeep',        slug: 'jeep'                   },
+  { name: 'Kia',         slug: 'kia'                    },
+  { name: 'Lexus',       slug: 'lexus',     scale: 1.7  },
+  { name: 'Mazda',       slug: 'mazda'                  },
+  { name: 'Mitsubishi',  slug: 'mitsubishi'             },
+  { name: 'Nissan',      slug: 'nissan'                 },
+  { name: 'Subaru',      slug: 'subaru'                 },
+  { name: 'Toyota',      slug: 'toyota'                 },
+  { name: 'Volkswagen',  slug: 'volkswagen'             },
+  { name: 'Volvo',       slug: 'volvo'                  },
 ]
 
 export default function VehicleMakesSection() {
@@ -37,11 +37,11 @@ export default function VehicleMakesSection() {
               key={make.slug}
               className="group flex flex-col items-center justify-center gap-2 rounded-lg border border-border bg-background p-4 transition-all duration-200 hover:border-primary hover:shadow-sm"
             >
-              <div className="flex h-12 w-full items-center justify-center">
-                {/* Plain img — next/image doesn't handle SVGs reliably */}
+              <div className="flex h-12 w-full items-center justify-center overflow-hidden">
                 <img
                   src={`/logos/makes/${make.slug}.svg`}
                   alt={make.name}
+                  style={make.scale ? { transform: `scale(${make.scale})` } : undefined}
                   className="h-full w-full object-contain"
                 />
               </div>
