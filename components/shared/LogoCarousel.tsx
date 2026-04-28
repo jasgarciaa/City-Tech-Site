@@ -5,8 +5,8 @@ import { useRef } from 'react'
 type Client = { name: string; logoSrc?: string; logoClassName?: string }
 
 const BASE_CLIENTS: Client[] = [
-  { name: 'AVIS', logoSrc: '/logos/avis-budget-group-logo-png_seeklogo-317428.webp', logoClassName: 'max-h-28 max-w-[260px]' },
-  { name: 'Zipcar', logoSrc: '/logos/zipcar-logo-png_seeklogo-333354.webp', logoClassName: 'max-h-28 max-w-[260px]' },
+  { name: 'AVIS', logoSrc: '/logos/avis-budget-group-logo-png_seeklogo-317428.webp', logoClassName: 'max-h-36 max-w-[300px]' },
+  { name: 'Zipcar', logoSrc: '/logos/zipcar-logo-png_seeklogo-333354.webp', logoClassName: 'max-h-36 max-w-[300px]' },
   { name: 'Michael and Sons', logoSrc: '/logos/New-michael-and-sons.webp' },
 ]
 
