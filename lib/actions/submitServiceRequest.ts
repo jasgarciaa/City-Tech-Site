@@ -68,10 +68,8 @@ export async function submitServiceRequest(payload: ServiceRequestPayload) {
     )
   }
 
-  // Owner notification email — using onboarding@resend.dev for dev (no DNS config needed)
-  // Before go-live: replace from address with owner's verified domain
-  await resend.emails.send({
-    from: 'Citytech <onboarding@resend.dev>',
+  const { data: emailData, error: emailError } = await resend.emails.send({
+    from: 'City Tech <noreply@send.citytechva.com>',
     to: OWNER_NOTIFICATION_EMAIL,
     subject: `New Service Request from ${payload.name}`,
     html: `
@@ -88,6 +86,12 @@ export async function submitServiceRequest(payload: ServiceRequestPayload) {
       <p><strong>Referred by:</strong> ${payload.referral_source ?? 'Not specified'}</p>
     `,
   })
+
+  if (emailError) {
+    console.error('Resend error:', emailError)
+  } else {
+    console.log('Resend sent, id:', emailData?.id)
+  }
 
   return { success: true }
 }
