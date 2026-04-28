@@ -42,7 +42,7 @@ export default function VehicleMakesSection() {
                 <img
                   src={`/logos/makes/${make.slug}.svg`}
                   alt={make.name}
-                  className="h-10 w-auto max-w-full object-contain grayscale transition-[filter] duration-200 group-hover:grayscale-0"
+                  className="h-full w-full object-contain"
                 />
               </div>
               <span className="text-xs font-normal text-muted-foreground">{make.name}</span>

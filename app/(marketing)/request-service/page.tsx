@@ -36,6 +36,10 @@ export default function RequestServicePage() {
         Fill out the form below and we&apos;ll reach out to confirm and quote your service. Rather
         call? We&apos;re available when you need us.
       </p>
+      <p className="mt-3 text-base text-muted-foreground">
+        <span className="font-semibold text-foreground">Can&apos;t find your service?</span>{' '}
+        Tell us what you need &mdash; we&apos;ll review your request and confirm availability.
+      </p>
 
       {/* Intro contact block — D-30: prominent Call Now CTA + owner email */}
       <div className="mt-6 rounded-lg bg-primary/5 p-6">
