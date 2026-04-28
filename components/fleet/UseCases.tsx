@@ -9,7 +9,7 @@ const USE_CASES = [
   {
     icon: KeyRound,
     title: 'Fleet Key Programming',
-    body: 'Keys cut and programmed on-site when vehicles arrive. No dealer, no tow, no vehicles sitting idle waiting on an appointment.',
+    body: 'Keys cut and programmed on-site when vehicles arrive. No dealer, no tow. We turn these around fast — every day a vehicle sits waiting on keys is a day it\'s not earning.',
   },
   {
     icon: Zap,
