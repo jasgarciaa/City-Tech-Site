@@ -1,7 +1,7 @@
 const MAKES = [
   { name: 'Acura',       slug: 'acura'                  },
-  { name: 'Chevrolet',   slug: 'chevrolet', scale: 2.6  },
-  { name: 'Chrysler',    slug: 'chrysler'               },
+  { name: 'Chevrolet',   slug: 'chevrolet', scale: 3.4  },
+  { name: 'Chrysler',    slug: 'chrysler',  scale: 1.6  },
   { name: 'Dodge',       slug: 'dodge'                  },
   { name: 'Ford',        slug: 'ford'                   },
   { name: 'GMC',         slug: 'gmc'                    },
@@ -10,7 +10,7 @@ const MAKES = [
   { name: 'Infiniti',    slug: 'infiniti'               },
   { name: 'Jeep',        slug: 'jeep'                   },
   { name: 'Kia',         slug: 'kia'                    },
-  { name: 'Lexus',       slug: 'lexus',     scale: 1.7  },
+  { name: 'Lexus',       slug: 'lexus',     scale: 2.2  },
   { name: 'Mazda',       slug: 'mazda'                  },
   { name: 'Mitsubishi',  slug: 'mitsubishi'             },
   { name: 'Nissan',      slug: 'nissan'                 },
