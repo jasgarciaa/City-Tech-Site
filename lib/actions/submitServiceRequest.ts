@@ -69,7 +69,7 @@ export async function submitServiceRequest(payload: ServiceRequestPayload) {
   }
 
   const { data: emailData, error: emailError } = await resend.emails.send({
-    from: 'City Tech <noreply@send.citytechva.com>',
+    from: 'City Tech <noreply@citytechva.com>',
     to: OWNER_NOTIFICATION_EMAIL,
     subject: `New Service Request from ${payload.name}`,
     html: `
