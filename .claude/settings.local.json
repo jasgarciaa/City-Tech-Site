@@ -24,7 +24,10 @@
       "Bash(git push *)",
       "mcp__claude_ai_Vercel__list_teams",
       "Bash(npm show *)",
-      "Bash(node_modules/.bin/tsc --noEmit)"
+      "Bash(node_modules/.bin/tsc --noEmit)",
+      "Bash(node __TRACKED_VAR__/.claude/get-shit-done/bin/gsd-tools.cjs timestamp)",
+      "Skill(gsd:verify-work)",
+      "Skill(gsd:verify-work:*)"
     ]
   }
 }
