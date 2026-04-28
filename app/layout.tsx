@@ -25,7 +25,7 @@ const localBusinessSchema = {
     'Mobile automotive locksmith and electronics services for the DC, Maryland, and Virginia region.',
   telephone: '+17033436234',
   email: 'Citytech12v@gmail.com',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechllc.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechva.com',
   areaServed: [
     { '@type': 'AdministrativeArea', name: 'Washington, DC' },
     { '@type': 'AdministrativeArea', name: 'Maryland' },

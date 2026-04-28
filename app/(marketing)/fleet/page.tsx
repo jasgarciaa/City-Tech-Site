@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'Fleet Services | CityTech',
     description:
       'Mobile automotive electronics and locksmith services for dealerships, rental companies, and commercial fleets in the DC, Maryland, and Virginia region.',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechllc.com'}/fleet`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechva.com'}/fleet`,
     siteName: 'CityTech',
     type: 'website',
   },

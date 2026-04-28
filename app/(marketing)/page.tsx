@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'CityTech — Mobile Automotive Locksmith and Electronics Service',
     description:
       'Mobile automotive electronics and locksmith services throughout the DC, Maryland, and Virginia region. Available when you need us.',
-    url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechllc.com',
+    url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechva.com',
     siteName: 'CityTech',
     type: 'website',
   },

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: 'Request Service | CityTech',
     description:
       'Submit a service request to CityTech. We come to you anywhere in the DC, Maryland, and Virginia region.',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechllc.com'}/request-service`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechva.com'}/request-service`,
     siteName: 'CityTech',
     type: 'website',
   },

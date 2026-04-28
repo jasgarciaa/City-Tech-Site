@@ -73,7 +73,7 @@ Plan: 3 of 3 complete
 - [Phase 03-lead-capture-seo P02]: AdministrativeArea (not State) for areaServed in LocalBusiness schema — more accurate for DC which is not a US state
 - [Phase 03-lead-capture-seo P02]: dangerouslySetInnerHTML + JSON.stringify for JSON-LD (not next/script) — must render synchronously in initial HTML for crawlers; next/script defers loading
 - [Phase 03-lead-capture-seo P02]: No address field in LocalBusiness schema — owner privacy requirement; areaServed covers service territory
-- [Phase 03-lead-capture-seo P02]: NEXT_PUBLIC_SITE_URL fallback to citytechllc.com — placeholder until owner confirms production domain; must be set on Vercel before go-live
+- [Phase 03-lead-capture-seo P02]: NEXT_PUBLIC_SITE_URL fallback to citytechva.com — production domain confirmed; must be set on Vercel before go-live
 - [Phase 03-lead-capture-seo]: VIN field extended into ServiceRequestPayload — stripped before DB insert, included in Resend email
 - [Phase 03-lead-capture-seo]: Fleet toggle maps to description prefix 'Fleet customer: Yes' — no separate DB column
 - [Phase 03-lead-capture-seo]: BLOG-01 through BLOG-05 deferred per D-26 — no blog code, only deferral comment in source files
