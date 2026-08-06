@@ -15,15 +15,15 @@ import ServiceRequestForm from '@/components/request-service/ServiceRequestForm'
 // =====================================================================
 
 export const metadata: Metadata = {
-  title: 'Request Service',
+  title: 'Request Mobile Service | Alexandria, DC & Maryland',
   description:
-    'Submit a service request to CityTech. We come to you anywhere in the DC, Maryland, and Virginia region.',
+    'Tell us your vehicle and location and we come to you across Alexandria, Arlington, Fairfax, DC, and Maryland. Or call (703) 343-6234 if you need someone now.',
+  alternates: { canonical: '/request-service' },
   openGraph: {
-    title: 'Request Service | CityTech',
+    title: 'Request Mobile Service | CityTech',
     description:
-      'Submit a service request to CityTech. We come to you anywhere in the DC, Maryland, and Virginia region.',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechva.com'}/request-service`,
-    siteName: 'CityTech',
+      'Tell us your vehicle and location and we come to you across Alexandria, Arlington, Fairfax, DC, and Maryland.',
+    url: '/request-service',
     type: 'website',
   },
 }

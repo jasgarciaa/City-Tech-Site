@@ -5,6 +5,24 @@ export interface ServiceDefinition {
   category: 'electronics' | 'locksmith'
   featured: boolean
   order: number
+  /**
+   * Search-facing title. Pattern: primary keyword + geo modifier, kept under about
+   * 60 characters so it isn't truncated. The root layout appends " | CityTech".
+   * Falls back to `name` when absent.
+   */
+  seoTitle?: string
+  /**
+   * Search-facing description, around 150 characters. This is ad copy for a free
+   * ad slot: it should give a reason to call, not restate the service name.
+   * Falls back to `shortDescription` when absent.
+   */
+  seoDescription?: string
+  /**
+   * Feeds FAQPage schema and, later, an on-page FAQ block.
+   * Only add answers CityTech has confirmed. Nothing invented — see the claims
+   * gate in the delivery SOPs. Prices and response times need sign-off first.
+   */
+  faqs?: { question: string; answer: string }[]
   pageContent: {
     problem: string
     solution: string
@@ -21,6 +39,9 @@ export const services: ServiceDefinition[] = [
     category: 'locksmith',
     featured: true,
     order: 1,
+    seoTitle: 'Car Lockout Service in Alexandria & Northern VA',
+    seoDescription:
+      'Locked out of your car in Alexandria, Arlington, or Fairfax? CityTech comes to you and gets you back in without damaging your vehicle. No tow, no dealership wait.',
     pageContent: {
       problem: 'Being locked out of your vehicle is stressful, especially in an unfamiliar area or bad weather.',
       solution: 'CityTech dispatches a technician directly to your location. No tow required, no dealership wait.',
@@ -38,6 +59,9 @@ export const services: ServiceDefinition[] = [
     category: 'locksmith',
     featured: true,
     order: 2,
+    seoTitle: 'Transponder Key Programming & Cutting | Alexandria VA',
+    seoDescription:
+      'Mobile transponder key cutting and programming across Northern Virginia and DC. Chipped keys and push-to-start fobs programmed at your location, for less than a dealership.',
     pageContent: {
       problem: 'Modern vehicle keys contain embedded transponder chips. A blank-cut key from a hardware store won\'t start your car.',
       solution: 'CityTech programs transponder keys on-site using the right programming equipment. Faster and less expensive than a dealership.',
@@ -55,6 +79,9 @@ export const services: ServiceDefinition[] = [
     category: 'locksmith',
     featured: false,
     order: 3,
+    seoTitle: 'Car Key Fob Replacement & Programming | Alexandria VA',
+    seoDescription:
+      'Lost or broken key fob? CityTech sources and programs replacement fobs on-site in Alexandria, Arlington, Springfield, and Fairfax. No tow to the dealership.',
     pageContent: {
       problem: 'Lost or damaged key fobs are expensive to replace at a dealership, and the process requires leaving your car there.',
       solution: 'CityTech programs replacement fobs on-site. Remote lock/unlock, panic, and trunk functions all restored without a tow.',
@@ -72,6 +99,9 @@ export const services: ServiceDefinition[] = [
     category: 'locksmith',
     featured: false,
     order: 4,
+    seoTitle: 'Car Ignition Repair & Replacement | Alexandria VA',
+    seoDescription:
+      'Key stuck or ignition won\'t turn? CityTech repairs and replaces ignition cylinders at your location across Northern Virginia and DC. No tow, no dealership labor charge.',
     pageContent: {
       problem: 'A worn or damaged ignition cylinder can prevent your key from turning or leave it stuck. There is no easy self-fix.',
       solution: 'CityTech diagnoses and repairs or replaces ignition cylinders at your location, saving you a costly dealership tow and labor charge.',
@@ -90,6 +120,9 @@ export const services: ServiceDefinition[] = [
     category: 'electronics',
     featured: false,
     order: 1,
+    seoTitle: 'Fleet GPS & Telematics Installation | DC, MD, VA',
+    seoDescription:
+      'Mobile telematics installation for commercial fleets across DC, Maryland, and Virginia. We install at your yard, so your vehicles stay on route instead of sitting at a shop.',
     pageContent: {
       problem: 'Without real-time data, managing a fleet means guessing at vehicle location, driver behavior, and maintenance needs — problems that compound quickly at scale.',
       solution: 'CityTech installs professional telematics devices that connect your fleet to a management platform, delivering live GPS location, mileage tracking, driver behavior alerts, and vehicle diagnostic data all accessible from a single dashboard.',
@@ -107,6 +140,9 @@ export const services: ServiceDefinition[] = [
     category: 'electronics',
     featured: false,
     order: 2,
+    seoTitle: 'OEM Factory Radio Repair | Alexandria & Northern VA',
+    seoDescription:
+      'Factory radio dead, display blank, or backup camera gone with it? CityTech diagnoses and repairs OEM head units across Northern Virginia for a fraction of dealer replacement.',
     pageContent: {
       problem: 'A failed factory radio takes your audio, backup camera display, and integrated controls with it — and dealer replacement quotes are often steep.',
       solution: 'CityTech diagnoses OEM radio faults and performs targeted repairs, restoring factory functionality at a fraction of dealer cost. Where repair isn\'t viable, we source and install a matching OEM unit.',
@@ -124,6 +160,9 @@ export const services: ServiceDefinition[] = [
     category: 'electronics',
     featured: true,
     order: 3,
+    seoTitle: 'Car Audio Installation | Alexandria & Northern VA',
+    seoDescription:
+      'Head units, speakers, subs, and amps installed at your home or office across Alexandria, Arlington, and Fairfax. Clean wiring, tuned and tested before we leave.',
     pageContent: {
       problem: 'Your factory stereo sounds flat and lacks the features you need.',
       solution: 'CityTech installs aftermarket audio systems for any vehicle: head units, speakers, subwoofers, and amplifiers matched to your budget.',
@@ -141,6 +180,9 @@ export const services: ServiceDefinition[] = [
     category: 'electronics',
     featured: false,
     order: 4,
+    seoTitle: 'Car Alarm Installation | Alexandria & Northern VA',
+    seoDescription:
+      'Vehicle alarm systems installed at your location across Northern Virginia and DC. Shock sensors, sirens, and remote disarm, wired clean and tested with you before we go.',
     pageContent: {
       problem: 'You want to protect your vehicle from theft and break-ins without complicated wiring.',
       solution: 'CityTech installs alarm systems with shock sensors, sirens, and remote disarm. Clean installation, tested before we leave.',
@@ -158,6 +200,9 @@ export const services: ServiceDefinition[] = [
     category: 'electronics',
     featured: false,
     order: 5,
+    seoTitle: 'Mobile Video & Dash Camera Systems | DC, MD, VA',
+    seoDescription:
+      'Headrest screens, overhead monitors, and commercial in-vehicle video installed across Northern Virginia, DC, and Maryland. Factory-clean installs for families and fleets.',
     pageContent: {
       problem: 'Long drives are hard on passengers without in-vehicle entertainment, especially for families.',
       solution: 'CityTech installs headrest monitors, overhead screens, and multimedia systems. Clean installations that look factory-fitted.',
@@ -175,6 +220,9 @@ export const services: ServiceDefinition[] = [
     category: 'electronics',
     featured: false,
     order: 6,
+    seoTitle: 'Backup Camera Installation | Alexandria & Northern VA',
+    seoDescription:
+      'Rearview camera systems installed at your location across Alexandria, Arlington, and Fairfax. Works with your existing screen or a new monitor, for cars and work vans.',
     pageContent: {
       problem: 'Reversing without a camera is stressful, and factory cameras can be expensive to repair or add.',
       solution: 'CityTech installs aftermarket backup cameras with clear night-vision capable displays, integrated into your existing screen or a new monitor.',
@@ -192,6 +240,9 @@ export const services: ServiceDefinition[] = [
     category: 'electronics',
     featured: true,
     order: 7,
+    seoTitle: 'Remote Start Installation | Alexandria & Northern VA',
+    seoDescription:
+      'Warm your car before you get in. CityTech installs remote start systems at your home or office across Northern Virginia and DC, tested with you before we leave.',
     pageContent: {
       problem: 'Stepping into a freezing or overheating vehicle every morning is an avoidable problem.',
       solution: 'CityTech installs remote start systems that let you warm up or cool down your vehicle before you get in.',
@@ -209,6 +260,9 @@ export const services: ServiceDefinition[] = [
     category: 'electronics',
     featured: false,
     order: 8,
+    seoTitle: 'CarPlay & Navigation Head Units | Alexandria VA',
+    seoDescription:
+      'Apple CarPlay, Android Auto, and built-in GPS head units installed across Northern Virginia and DC. A permanent fix for a car that never came with navigation.',
     pageContent: {
       problem: 'Your vehicle lacks built-in navigation and phone mounts are an unreliable substitute.',
       solution: 'CityTech installs aftermarket head units with Android Auto, Apple CarPlay, and built-in GPS navigation. A clean, permanent solution.',
@@ -226,6 +280,9 @@ export const services: ServiceDefinition[] = [
     category: 'electronics',
     featured: false,
     order: 9,
+    seoTitle: 'GPS Vehicle Tracking & Security Systems | DC, MD, VA',
+    seoDescription:
+      'Concealed GPS trackers and security systems for personal vehicles and commercial fleets across Northern Virginia, DC, and Maryland. Live location and tamper alerts.',
     pageContent: {
       problem: 'Knowing where your vehicle is and getting alerted to unauthorized movement matters for both personal owners and businesses.',
       solution: 'CityTech installs GPS tracking and security systems that give you real-time location data and tamper alerts through a mobile app.',

@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import type { Metadata } from 'next'
+import { SITE_URL, businessSchema, jsonLd } from '@/lib/seo'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -10,28 +11,21 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  // Required for canonical and OG URLs to resolve from relative paths.
+  metadataBase: new URL(SITE_URL),
   title: {
-    template: '%s | Citytech',
-    default: 'Citytech — Mobile Automotive Locksmith and Electronics Service',
+    template: '%s | CityTech',
+    default: 'Mobile Auto Locksmith & Car Key Replacement | Alexandria VA | CityTech',
   },
-  description: 'Mobile automotive locksmith and electronics services for the DC, Maryland, and Virginia region.',
-}
-
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'CityTech, LLC',
   description:
-    'Mobile automotive locksmith and electronics services for the DC, Maryland, and Virginia region.',
-  telephone: '+17033436234',
-  email: 'Citytech12v@gmail.com',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechva.com',
-  areaServed: [
-    { '@type': 'AdministrativeArea', name: 'Washington, DC' },
-    { '@type': 'AdministrativeArea', name: 'Maryland' },
-    { '@type': 'AdministrativeArea', name: 'Virginia' },
-  ],
-  priceRange: '$$',
+    'Mobile automotive locksmith and electronics service in Alexandria, VA. Car key replacement, key fob programming, and lockouts across Northern Virginia, DC, and Maryland. We come to you.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    siteName: 'CityTech',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: { card: 'summary_large_image' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -44,10 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
+        <script {...jsonLd(businessSchema)} />
         {children}
       </body>
     </html>

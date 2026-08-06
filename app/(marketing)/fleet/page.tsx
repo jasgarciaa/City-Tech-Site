@@ -6,15 +6,15 @@ import LogoCarousel from '@/components/shared/LogoCarousel'
 import FleetContactForm from '@/components/fleet/FleetContactForm'
 
 export const metadata: Metadata = {
-  title: 'Fleet Services',
+  title: 'Fleet Telematics, Cameras & Key Programming | DC, MD, VA',
   description:
-    'Mobile automotive electronics and locksmith services for dealerships, rental companies, and commercial fleets in the DC, Maryland, and Virginia region.',
+    'Telematics, cameras, and key programming for commercial fleets across DC, Maryland, and Virginia. We install at your yard, so vehicles stay on route instead of sitting at a shop.',
+  alternates: { canonical: '/fleet' },
   openGraph: {
-    title: 'Fleet Services | CityTech',
+    title: 'Fleet Telematics & Vehicle Upfitting | CityTech',
     description:
-      'Mobile automotive electronics and locksmith services for dealerships, rental companies, and commercial fleets in the DC, Maryland, and Virginia region.',
-    url: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechva.com'}/fleet`,
-    siteName: 'CityTech',
+      'Telematics, cameras, and key programming for commercial fleets across DC, Maryland, and Virginia. We install at your yard, not at a shop.',
+    url: '/fleet',
     type: 'website',
   },
 }

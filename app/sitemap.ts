@@ -1,8 +1,9 @@
 import type { MetadataRoute } from 'next'
+import { SITE_URL } from '@/lib/seo'
 import { services } from '@/data/services'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechva.com'
+  const base = SITE_URL
 
   const staticPages: MetadataRoute.Sitemap = [
     {

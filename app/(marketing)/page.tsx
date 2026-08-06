@@ -10,16 +10,21 @@ import ServiceAreaSection from '@/components/home/ServiceAreaSection'
 import QuickContactForm from '@/components/home/QuickContactForm'
 import FooterCTASection from '@/components/home/FooterCTASection'
 
+// `title.absolute` bypasses the "%s | CityTech" template so the brand name isn't
+// repeated. The previous title here was "Home", which ranked for nothing.
 export const metadata: Metadata = {
-  title: 'Home',
+  title: {
+    absolute:
+      'Mobile Auto Locksmith & Car Key Replacement | Alexandria VA | CityTech',
+  },
   description:
-    'Mobile automotive electronics and locksmith services throughout the DC, Maryland, and Virginia region. Available when you need us.',
+    'Car keys, fobs, lockouts, and auto electronics, wherever your vehicle is. Serving Alexandria, Arlington, Fairfax, DC, and Maryland since 2016. Licensed and NASTF verified.',
+  alternates: { canonical: '/' },
   openGraph: {
-    title: 'CityTech — Mobile Automotive Locksmith and Electronics Service',
+    title: 'CityTech — Mobile Auto Locksmith & Electronics | Alexandria VA',
     description:
-      'Mobile automotive electronics and locksmith services throughout the DC, Maryland, and Virginia region. Available when you need us.',
-    url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://citytechva.com',
-    siteName: 'CityTech',
+      'Car keys, fobs, lockouts, and auto electronics, wherever your vehicle is. Serving Alexandria, Arlington, Fairfax, DC, and Maryland since 2016.',
+    url: '/',
     type: 'website',
   },
 }

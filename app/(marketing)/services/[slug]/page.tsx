@@ -7,6 +7,12 @@ import { Button } from '@/components/ui/button'
 import ServiceBreadcrumb from '@/components/services/ServiceBreadcrumb'
 import ProcessSteps from '@/components/services/ProcessSteps'
 import RelatedServices from '@/components/services/RelatedServices'
+import {
+  buildBreadcrumbSchema,
+  buildFaqSchema,
+  buildServiceSchema,
+  jsonLd,
+} from '@/lib/seo'
 
 // Force static generation — unknown slugs produce 404 rather than fall through to dynamic render
 export const dynamicParams = false
@@ -21,12 +27,20 @@ export async function generateMetadata(
   const { slug } = await params
   const service = getServiceBySlug(slug)
   if (!service) return {}
+
+  const title = service.seoTitle ?? service.name
+  const description = service.seoDescription ?? service.shortDescription
+  const path = `/services/${service.slug}`
+
   return {
-    title: service.name,
-    description: service.shortDescription,
+    title,
+    description,
+    alternates: { canonical: path },
     openGraph: {
-      title: `${service.name} | CityTech`,
-      description: service.shortDescription,
+      title: `${title} | CityTech`,
+      description,
+      url: path,
+      type: 'website',
     },
   }
 }
@@ -44,8 +58,24 @@ export default async function ServiceDetailPage(
       ? 'bg-primary text-primary-foreground'
       : 'bg-accent text-accent-foreground'
 
+  const serviceSchema = buildServiceSchema({
+    name: service.name,
+    description: service.seoDescription ?? service.shortDescription,
+    slug: service.slug,
+  })
+
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/#services' },
+    { name: service.name, url: `/services/${service.slug}` },
+  ])
+
   return (
     <article className="mx-auto max-w-3xl px-6 py-12">
+      <script {...jsonLd(serviceSchema)} />
+      <script {...jsonLd(breadcrumbSchema)} />
+      {service.faqs?.length ? <script {...jsonLd(buildFaqSchema(service.faqs))} /> : null}
+
       <ServiceBreadcrumb currentName={service.name} />
 
       {/* Page header */}
